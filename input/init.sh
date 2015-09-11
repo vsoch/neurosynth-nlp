@@ -46,7 +46,7 @@ deepdive sql "
     dependencies text[],
     ner_tags text[],
     sentence_offset bigint,
-    sentence_id text -- unique identifier for sentences
+    sentence_id text
 );
 "
 
@@ -58,3 +58,24 @@ deepdive run nlp_extract
 # You or an admin must do:
 # sudo apt-get install postgresql-plpython
 # deepdive sql 'CREATE LANGUAGE plpythonu;'
+
+# Create tables for mentions
+deepdive sql "
+  CREATE TABLE concept_mentions(
+    sentence_id text,
+    start_position int,
+    length int,
+    text text,
+    mention_id text
+);
+"
+
+deepdive sql "
+  CREATE TABLE region_mentions(
+    sentence_id text,
+    start_position int,
+    length int,
+    text text,
+    mention_id text 
+  );
+"
