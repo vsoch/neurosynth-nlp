@@ -50,6 +50,11 @@ deepdive sql "
 );
 "
 
-# load the data into database
-deepdive sql "COPY sentences FROM STDIN CSV" <./articles.csv
+# Run nlp extractor to parse into table
+deepdive run nlp_extract
 
+# If you get this error:
+# ERROR:  must be superuser to create procedural language "plpythonu"
+# You or an admin must do:
+# sudo apt-get install postgresql-plpython
+# deepdive sql 'CREATE LANGUAGE plpythonu;'
