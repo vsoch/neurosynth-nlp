@@ -12,8 +12,8 @@ if ! [[ -e database.txt ]]; then
 fi
 
 # If articles not extracted, extract them
-if ! [[ -e articles.csv ]]; then
-    python extract_articles.py articles.csv
+if ! [[ -e articles.txt ]]; then
+    python extract_articles.py articles.txt
 fi
 
 # Create articles table
@@ -24,7 +24,7 @@ deepdive sql "
   );
 "
 
-deepdive sql "COPY articles FROM STDIN CSV" <./articles.csv
+deepdive sql "COPY articles FROM STDIN DELIMITER AS '|'" <./articles.txt
 
 # load the data into database
 deepdive sql "COPY sentences FROM STDIN CSV" <./articles.csv

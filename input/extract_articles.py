@@ -3,6 +3,7 @@
 import os
 import sys
 import pandas
+import pickle
 from textblob import TextBlob
 from pubmed import Pubmed
 from glob import glob
@@ -43,16 +44,18 @@ if not os.path.exists("articles.pkl"):
 #<p>
 #</text>"
 
+# We should use utf-8 http://www.postgresql.org/docs/9.0/static/multibyte.html
+
 filey = open(output_file,"wb")
 count = 0
-for pmid,article in articles.iteritems():
+for pmid, article in articles.iteritems():
     print "Parsing %s of %s" %(count,len(articles))
-    filey.writelines('%s,"<text>\n' %pmid)
+    filey.write('%s|"<text>' %pmid)
     abstract = article.getAbstract()
     blob = TextBlob(abstract)
     for sentence in blob.sentences:
-        sentence = sentence.format("utf-8"),replace(","," ")
-        filey.writelines('<p>\n%s\n</p>\n' %sentence)
-    filey.writelines('</text>"\n')
-    count = count + 1
+        sentence = '<p>%s</p>' %sentence.raw.replace("\t","").replace("|"," ").replace("\n","").replace("\r","")
+        filey.write(sentence.replace("}","").replace("{","").encode("utf-8"))
+    filey.write('</text>"\n')
+    count = count+1
 filey.close()
