@@ -3,7 +3,7 @@
 import os
 import sys
 import pandas
-import textblob import TextBlob
+from textblob import TextBlob
 from pubmed import Pubmed
 from glob import glob
 
@@ -42,7 +42,8 @@ for pmid,article in articles.iteritems():
     abstract = article.getAbstract()
     blob = TextBlob(abstract)
     for sentence in blob.sentences:
-        filey.writelines('<p>\n%s\n</p>\n' %sentence.replace(","," "))
+        sentence = sentence.format("utf-8"),replace(","," ")
+        filey.writelines('<p>\n%s\n</p>\n' %sentence)
     filey.writelines('</text>"\n')
     count = count + 1
 filey.close()
