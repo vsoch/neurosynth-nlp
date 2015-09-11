@@ -9,6 +9,13 @@ from glob import glob
 
 output_file = sys.argv[1]
 
+# First download nltk stuffs
+home=os.environ["HOME"]
+if not os.path.exists("%s/nltk_data" %home):
+   import nltk
+   nltk.download('all')
+
+# Download neurosynth data
 df = pandas.read_csv("database.txt",sep="\t")
 pmids = df.id.unique().tolist()
 
@@ -21,7 +28,9 @@ articles1 = pm.get_many_articles(pmids[:10000])
 articles2 = pm.get_many_articles(pmids[10000:])
 articles = articles1.copy()
 articles.update(articles2)
-#pickle.dump(articles,open("articles.pkl","wb"))
+
+if not os.path.exists("articles.pkl"):
+    pickle.dump(articles,open("articles.pkl","wb"))
 
 # Write articles to file
 #88390,"<text>
