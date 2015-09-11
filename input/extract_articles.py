@@ -34,16 +34,8 @@ if not os.path.exists("articles.pkl"):
     pickle.dump(articles,open("articles.pkl","wb"))
 
 # Write articles to file
-#88390,"<text>
-#<p>
-#sentence1
-#</p>
-#<p>
-#sentence2
-#</p>
-#<p>
-#</text>"
-
+#88390|"<text><p>sentence1</p><p>sentence2</p><p></text>"
+#88390|"<text><p>sentence1</p><p>sentence2</p><p></text>"
 # We should use utf-8 http://www.postgresql.org/docs/9.0/static/multibyte.html
 
 filey = open(output_file,"wb")

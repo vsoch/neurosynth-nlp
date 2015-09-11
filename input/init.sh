@@ -26,5 +26,30 @@ deepdive sql "
 
 deepdive sql "COPY articles FROM STDIN DELIMITER AS '|'" <./articles.txt
 
+# Compile the Stanford parser
+if hash sbt 2>/dev/null; then
+    echo "Please see nlp_extractor_reqs.sh to set up sbt for the nlp_extractor"
+else
+    cd $DEEPDIVE_HOME/examples/nlp_extractor
+    sbt stage
+    cd "$(dirname "$0")"
+fi
+
+# Create sentences table
+deepdive sql "
+  CREATE TABLE sentences(
+    document_id text,
+    sentence text,
+    words text[],
+    lemma text[],
+    pos_tags text[],
+    dependencies text[],
+    ner_tags text[],
+    sentence_offset bigint,
+    sentence_id text -- unique identifier for sentences
+);
+"
+
 # load the data into database
 deepdive sql "COPY sentences FROM STDIN CSV" <./articles.csv
+
