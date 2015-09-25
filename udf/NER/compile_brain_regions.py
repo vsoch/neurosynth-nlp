@@ -25,9 +25,9 @@ def extract_xml(xmlfile,parent_id="canonical",child_id="base"):
         # Get any child nodes
         for variant in child:
             children.append({"name":variant.attrib[child_id].lower()})
-        nodes[child.attrib[parent_id]] = {"name":parent_id,
-                                          "variants":children,
-                                          "ref_id":child.attrib["ref_id"]}
+        nodes[parent] = {"name":parent_id,
+                        "variants":children,
+                        "ref_id":child.attrib["ref_id"]}
     result = {"nodes":nodes,"source":source}
     return result
 
