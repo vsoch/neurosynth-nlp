@@ -34,7 +34,6 @@ ARR_DELIM = '~^~'
 # Retrieve concepts from the cognitive atlas
 concepts = get_concept().pandas
 concept_names = concepts["name"].tolist()
-concept_uids = concepts["id"].tolist()
 
 # We will stem concept names, and search for them across sentences
 concepts_stemmed = []
