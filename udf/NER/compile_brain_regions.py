@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import numpy
 import os
 import json
 import sys
@@ -57,7 +58,14 @@ regions = dict()
 for x in xmls:
     regions = merge_dicts(regions,x)
 
+# Now make it proper json!
+result = []
+for region,info in regions.iteritems():
+    result.append({"name":region,
+                   "ref_id":info["ref_id"],
+                   "variants":numpy.unique(info["variants"]).tolist()})
+
 # Write to output file
 filey = open(output_json,'wb')
-filey.write(json.dumps(regions, sort_keys=True,indent=4, separators=(',', ': ')))
+filey.write(json.dumps(result, sort_keys=True,indent=4, separators=(',', ': ')))
 filey.close()
