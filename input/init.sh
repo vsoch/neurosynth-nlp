@@ -53,7 +53,7 @@ deepdive sql "
 # If the compiled brain regions file doesn't exist, create it
 if ! [[ -e ../udf/NER/brain_regions.json ]]; then
     echo "Generating compiled brain regions json..."
-    python ../udf/compile_brain_regions.py NER/brain_regions.json
+    python ../udf/NER/compile_brain_regions.py ../udf/NER/brain_regions.json "../udf/NER/aba-syn.xml,../udf/NER/bams2004swanson-syn.xml"
 fi
 
 # Run nlp extractor to parse into table

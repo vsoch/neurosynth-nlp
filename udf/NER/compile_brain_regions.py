@@ -1,9 +1,14 @@
 import xml.etree.ElementTree as ET
 import os
+import json
 import sys
 
 output_json = sys.argv[1]
-import json
+input_files = sys.argv[2]
+
+input_files = input_files.split(",")
+input_files =  [os.path.abspath(input_file) for input_file in input_files]
+output_json = os.path.abspath(output_json)
 
 # Function to return dictionary of dict[parent] = [child1,child2,child3]
 # Each parent is a brain region term
@@ -26,8 +31,9 @@ def extract_xml(xmlfile,parent_id="canonical",child_id="base"):
     return result
 
 # Extract brain region dictionaries
-aba = extract_xml('NER/aba-syn.xml')
-bams = extract_xml('NER/bams2004swanson-syn.xml')
+xmls = []
+for input_file in input_files:
+    xmls.append(extract_xml(input_file))
 
 def merge_dicts(regions,regiondict):
     for name,others in regiondict["nodes"].iteritems():
@@ -48,8 +54,8 @@ def merge_dicts(regions,regiondict):
 
 # Combine them into one
 regions = dict()
-regions = merge_dicts(regions,aba)
-regions = merge_dicts(regions,bams)
+for x in xmls:
+    regions = merge_dicts(regions,x)
 
 # Write to output file
 filey = open(output_json,'wb')
