@@ -23,11 +23,10 @@ Will produce objects of format:
 
 '''
 
-
-
 from cognitiveatlas.api import get_concept
 from nlp import do_stem
 import re
+import numpy
 import sys
 
 ARR_DELIM = '~^~'
