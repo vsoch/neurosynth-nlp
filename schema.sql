@@ -1,4 +1,8 @@
-DROP TABLE IF EXISTS sentences CASCADE;
+CREATE TABLE articles(
+    article_id bigint,    -- identifier of article
+    text       text       -- all text in the article
+);
+
 CREATE TABLE sentences(
   document_id text,
   sentence text,
@@ -12,7 +16,6 @@ CREATE TABLE sentences(
 );
 
 
-DROP TABLE IF EXISTS concept_mentions CASCADE;
 CREATE TABLE concept_mentions(
   sentence_id text,
   start_position int,
@@ -22,11 +25,10 @@ CREATE TABLE concept_mentions(
   );
 
 
-DROP TABLE IF EXISTS region_mentions CASCADE;
 CREATE TABLE region_mentions(
   sentence_id text,
   start_position int,
   length int,
   text text,
   mention_id text  -- unique identifier for region_mentions
-  );
+);
