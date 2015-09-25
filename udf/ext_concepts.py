@@ -25,7 +25,6 @@ Will produce objects of format:
 
 
 
-from textblob import TextBlob
 from cognitiveatlas.api import get_concept
 from nlp import do_stem
 import re
@@ -49,8 +48,6 @@ for concept_name in concept_names:
 
 # Make a long regular expression
 concept_regexp = "*|".join(concepts_stemmed) + "*"
-
-# Function to match a phrase, either to right or left
 
 # Function to get a match: start, length, text,s from a sentence
 def get_match(phrasematch,entirephrase):
