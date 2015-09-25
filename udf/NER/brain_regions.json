@@ -33,7 +33,10 @@
     },
     {
         "name": "interpeduncular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:100",
+            "12394"
+        ],
         "variants": [
             "interpeduncular ganglion",
             "interpeduncular nucleus",
@@ -63,7 +66,10 @@
     },
     {
         "name": "medial septal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:564",
+            "11871"
+        ],
         "variants": [
             "medial parolfactory nucleus",
             "medial septal nucleus",
@@ -153,7 +159,10 @@
     },
     {
         "name": "dorsal nucleus raphe",
-        "ref_id": null,
+        "ref_id": [
+            "aba:872",
+            "12402"
+        ],
         "variants": [
             "cell group b7",
             "dorsal nucleus of the raphe",
@@ -250,7 +259,10 @@
     },
     {
         "name": "hemispheric regions",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1073",
+            "12141"
+        ],
         "variants": [
             "hemispheric regions"
         ]
@@ -314,7 +326,10 @@
     },
     {
         "name": "superior olivary complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:398",
+            "12500"
+        ],
         "variants": [
             "nucleus olivaris metencephali",
             "nucleus olivaris rostralis",
@@ -352,7 +367,10 @@
     },
     {
         "name": "anterior tegmental nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:231",
+            "12418"
+        ],
         "variants": [
             "anterior tegmental nucleus"
         ]
@@ -549,7 +567,10 @@
     },
     {
         "name": "parasubiculum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:843",
+            "11834"
+        ],
         "variants": [
             "area 49 brodmann",
             "area parasubicularis",
@@ -570,7 +591,10 @@
     },
     {
         "name": "trochlear nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:115",
+            "12446"
+        ],
         "variants": [
             "nucleus nervi trochlearis",
             "nucleus of trochlear nerve",
@@ -600,7 +624,10 @@
     },
     {
         "name": "posterior pretectal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1061",
+            "12347"
+        ],
         "variants": [
             "posterior pretectal nucleus"
         ]
@@ -632,7 +659,10 @@
     },
     {
         "name": "nucleus circularis",
-        "ref_id": null,
+        "ref_id": [
+            "aba:432",
+            "12320"
+        ],
         "variants": [
             "central dorsal nucleus",
             "nucleus centralis dorsalis thalami",
@@ -664,7 +694,10 @@
     },
     {
         "name": "tegmental reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:574",
+            "12537"
+        ],
         "variants": [
             "tegmental reticular nucleus"
         ]
@@ -680,7 +713,10 @@
     },
     {
         "name": "cerebellum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:512",
+            "12168"
+        ],
         "variants": [
             "cerebellar",
             "cerebellum",
@@ -749,7 +785,10 @@
     },
     {
         "name": "supplemental somatosensory area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:378",
+            "11995"
+        ],
         "variants": [
             "area sii of woolsey-1958",
             "second sensory area",
@@ -829,7 +868,10 @@
     },
     {
         "name": "sublaterodorsal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:358",
+            "12415"
+        ],
         "variants": [
             "sublaterodorsal nucleus"
         ]
@@ -856,14 +898,20 @@
     },
     {
         "name": "olfactory areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:698",
+            "12102"
+        ],
         "variants": [
             "olfactory areas"
         ]
     },
     {
         "name": "anteroventral preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:263",
+            "12288"
+        ],
         "variants": [
             "anteroventral preoptic nucleus"
         ]
@@ -930,7 +978,10 @@
     },
     {
         "name": "retrochiasmatic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:173",
+            "12275"
+        ],
         "variants": [
             "area retrochiasmatica",
             "nucleus supraopticus diffusus",
@@ -941,7 +992,10 @@
     },
     {
         "name": "inferior salivatory nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:106",
+            "12568"
+        ],
         "variants": [
             "inferior salivatory nucleus",
             "nucleus salivarius inferior",
@@ -1019,7 +1073,10 @@
     },
     {
         "name": "lateral mammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:210",
+            "12257"
+        ],
         "variants": [
             "intercalated mammillary nucleus",
             "intermediate mammillary nucleus",
@@ -1057,7 +1114,10 @@
     },
     {
         "name": "lateral habenula",
-        "ref_id": null,
+        "ref_id": [
+            "aba:186",
+            "12237"
+        ],
         "variants": [
             "lateral habenula",
             "lateral habenular nucleus",
@@ -1151,7 +1211,10 @@
     },
     {
         "name": "ansiform lobule",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1017",
+            "12145"
+        ],
         "variants": [
             "ansiform lobule",
             "lobulus ansiformis cerebelli"
@@ -1189,7 +1252,10 @@
     },
     {
         "name": "parafascicular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:930",
+            "12209"
+        ],
         "variants": [
             "nuclei parafasciculares thalami",
             "nucleus parafascicularis",
@@ -1258,7 +1324,10 @@
     },
     {
         "name": "nucleus of the posterior commissure",
-        "ref_id": null,
+        "ref_id": [
+            "aba:634",
+            "12346"
+        ],
         "variants": [
             "darkshevich's nucleus",
             "interstitial nucleus of cajal",
@@ -1291,7 +1360,10 @@
     },
     {
         "name": "periventricular hypothalamic nucleus, intermediate part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:118",
+            "12298"
+        ],
         "variants": [
             "intermediate periventricular nucleus",
             "intermediate periventricular nucleus of hypothalamus",
@@ -1486,7 +1558,10 @@
     },
     {
         "name": "lateral dorsal nucleus of thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:155",
+            "12181"
+        ],
         "variants": [
             "lateral dorsal nucleus",
             "lateral dorsal nucleus of thalamus",
@@ -1541,7 +1616,10 @@
     },
     {
         "name": "peripeduncular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1044",
+            "12225"
+        ],
         "variants": [
             "nucleus peripeduncularis",
             "nucleus peripeduncularis thalami",
@@ -1660,7 +1738,10 @@
     },
     {
         "name": "pallidum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:803",
+            "11861"
+        ],
         "variants": [
             "extended pallidum",
             "globus pallidus",
@@ -1682,7 +1763,10 @@
     },
     {
         "name": "zona incerta",
-        "ref_id": null,
+        "ref_id": [
+            "aba:797",
+            "12229"
+        ],
         "variants": [
             "zona incerta"
         ]
@@ -1819,7 +1903,10 @@
     },
     {
         "name": "paraventricular nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:149",
+            "12191"
+        ],
         "variants": [
             "nucleus paramedianus",
             "nucleus paraventricularis thalami",
@@ -1832,7 +1919,10 @@
     },
     {
         "name": "inferior olivary complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:83",
+            "12539"
+        ],
         "variants": [
             "inferior olivary complex",
             "inferior olivary nuclear complex",
@@ -1846,7 +1936,10 @@
     },
     {
         "name": "interstitial nucleus of the vestibular nerve",
-        "ref_id": null,
+        "ref_id": [
+            "aba:76",
+            "12479"
+        ],
         "variants": [
             "interstitial nucleus of the eighth nerve",
             "interstitial nucleus of the vestibular nerve",
@@ -1865,7 +1958,10 @@
     },
     {
         "name": "medial habenula",
-        "ref_id": null,
+        "ref_id": [
+            "aba:483",
+            "12240"
+        ],
         "variants": [
             "medial habenula",
             "medial habenular nucleus",
@@ -1937,7 +2033,10 @@
     },
     {
         "name": "interanterodorsal nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1113",
+            "12180"
+        ],
         "variants": [
             "interanterodorsal nucleus of the thalamus",
             "interanterodorsal nucleus thalamus",
@@ -1957,7 +2056,10 @@
     },
     {
         "name": "cerebellar nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:519",
+            "12160"
+        ],
         "variants": [
             "central nuclei",
             "cerebellar nuclei",
@@ -2121,7 +2223,10 @@
     },
     {
         "name": "infralimbic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:44",
+            "12064"
+        ],
         "variants": [
             "infralimbic area",
             "infralimbic cortex"
@@ -2196,7 +2301,10 @@
     },
     {
         "name": "central lobule",
-        "ref_id": null,
+        "ref_id": [
+            "aba:920",
+            "12116"
+        ],
         "variants": [
             "ala centralis",
             "ala lobuli centralis",
@@ -2326,7 +2434,10 @@
     },
     {
         "name": "presubiculum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1084",
+            "11832"
+        ],
         "variants": [
             "area 27 of brodmann",
             "area praesubicularis",
@@ -2354,7 +2465,10 @@
     },
     {
         "name": "posterodorsal preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:914",
+            "12287"
+        ],
         "variants": [
             "posterodorsal preoptic nucleus"
         ]
@@ -2527,14 +2641,20 @@
     },
     {
         "name": "suprachiasmatic preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1124",
+            "12327"
+        ],
         "variants": [
             "suprachiasmatic preoptic nucleus"
         ]
     },
     {
         "name": "prelimbic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:972",
+            "12072"
+        ],
         "variants": [
             "prelimbic area"
         ]
@@ -2628,7 +2748,10 @@
     },
     {
         "name": "olfactory tubercle",
-        "ref_id": null,
+        "ref_id": [
+            "aba:754",
+            "11924"
+        ],
         "variants": [
             "anterior perforated area",
             "anterior perforated space",
@@ -2679,7 +2802,10 @@
     },
     {
         "name": "inferior colliculus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:4",
+            "12495"
+        ],
         "variants": [
             "caudal colliculus",
             "colliculus caudalis",
@@ -2913,7 +3039,10 @@
     },
     {
         "name": "efferent cochlear group",
-        "ref_id": null,
+        "ref_id": [
+            "aba:887",
+            "12555"
+        ],
         "variants": [
             "efferent cochlear group"
         ]
@@ -2965,7 +3094,10 @@
     },
     {
         "name": "pedunculopontine nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1052",
+            "12380"
+        ],
         "variants": [
             "nucleus pedunculopontinus",
             "nucleus tegmenti pedunculopontinus",
@@ -2976,7 +3108,10 @@
     },
     {
         "name": "paramedian reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:995",
+            "12547"
+        ],
         "variants": [
             "nucleus paramedianus oralis",
             "nucleus paramedianus ventralis",
@@ -3186,7 +3321,10 @@
     },
     {
         "name": "perireunensis nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1077",
+            "12189"
+        ],
         "variants": [
             "perireunensis nucleus",
             "perireuniens nucleus"
@@ -3239,7 +3377,10 @@
     },
     {
         "name": "interfascicular nucleus raphe",
-        "ref_id": null,
+        "ref_id": [
+            "aba:12",
+            "12408"
+        ],
         "variants": [
             "interfascicular nucleus",
             "interfascicular nucleus raphe"
@@ -3407,7 +3548,10 @@
     },
     {
         "name": "somatosensory areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:453",
+            "11987"
+        ],
         "variants": [
             "somatosensory areas",
             "somesthetic areas"
@@ -3445,7 +3589,10 @@
     },
     {
         "name": "cortical plate",
-        "ref_id": null,
+        "ref_id": [
+            "aba:695",
+            "11813"
+        ],
         "variants": [
             "cerebral cortex",
             "cortex cerebralis",
@@ -3455,7 +3602,10 @@
     },
     {
         "name": "layer 6b, isocortex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:16",
+            "12081"
+        ],
         "variants": [
             "layer 6b",
             "layer 6b, isocortex"
@@ -3535,7 +3685,10 @@
     },
     {
         "name": "agranular insular area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:95",
+            "12007"
+        ],
         "variants": [
             "agranular insular area"
         ]
@@ -3575,7 +3728,10 @@
     },
     {
         "name": "main olfactory bulb, glomerular layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:212",
+            "11816"
+        ],
         "variants": [
             "glomerular layer of the main olfactory bulb",
             "main olfactory bulb, glomerular layer"
@@ -3678,7 +3834,10 @@
     },
     {
         "name": "midbrain reticular nucleus, magnocellular part, general",
-        "ref_id": null,
+        "ref_id": [
+            "aba:548",
+            "12627"
+        ],
         "variants": [
             "magnocellular part of the midbrain reticular nucleus, general",
             "midbrain reticular nucleus, magnocellular part, general"
@@ -3748,7 +3907,10 @@
     },
     {
         "name": "posterior complex of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1020",
+            "12212"
+        ],
         "variants": [
             "posterior complex of the thalamus"
         ]
@@ -3803,7 +3965,10 @@
     },
     {
         "name": "ventral posterior complex of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:709",
+            "12218"
+        ],
         "variants": [
             "ventral posterior complex of the thalamus",
             "ventral posterior complex thalamus"
@@ -3886,7 +4051,10 @@
     },
     {
         "name": "dentate gyrus lateral blade",
-        "ref_id": null,
+        "ref_id": [
+            "aba:766",
+            "12054"
+        ],
         "variants": [
             "dentate gyrus lateral blade"
         ]
@@ -3971,7 +4139,10 @@
     },
     {
         "name": "supragenual nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:318",
+            "12411"
+        ],
         "variants": [
             "supragenual nucleus"
         ]
@@ -3996,7 +4167,10 @@
     },
     {
         "name": "anteromedial visual area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:394",
+            "12000"
+        ],
         "variants": [
             "anteromedial visual area"
         ]
@@ -4073,7 +4247,10 @@
     },
     {
         "name": "magnocellular reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:307",
+            "12368"
+        ],
         "variants": [
             "magnocellular reticular nucleus",
             "magnocellular reticular nucleus, ventral part"
@@ -4100,7 +4277,10 @@
     },
     {
         "name": "hippocampal formation",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1089",
+            "11824"
+        ],
         "variants": [
             "hippocampal formation"
         ]
@@ -4189,14 +4369,20 @@
     },
     {
         "name": "pretectal region",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1100",
+            "12350"
+        ],
         "variants": [
             "pretectal region"
         ]
     },
     {
         "name": "fasciola cinerea",
-        "ref_id": null,
+        "ref_id": [
+            "aba:982",
+            "12063"
+        ],
         "variants": [
             "fasciola cinerea",
             "fasciola cinereum",
@@ -4338,7 +4524,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, descending division, forniceal part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:447",
+            "12314"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, descending division, forniceal part"
         ]
@@ -4524,7 +4713,10 @@
     },
     {
         "name": "suprachiasmatic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:286",
+            "12279"
+        ],
         "variants": [
             "nucleus suprachiasmaticus hypothalami",
             "suprachiasmatic nucleus",
@@ -4578,7 +4770,10 @@
     },
     {
         "name": "subparaventricular zone",
-        "ref_id": null,
+        "ref_id": [
+            "aba:347",
+            "12276"
+        ],
         "variants": [
             "subparaventricular zone",
             "subparaventricular zone hypothalamus",
@@ -4694,7 +4889,10 @@
     },
     {
         "name": "culmen",
-        "ref_id": null,
+        "ref_id": [
+            "aba:928",
+            "12123"
+        ],
         "variants": [
             "4&5th cerebellar lobules",
             "culmen",
@@ -4756,7 +4954,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, parvicellular division",
-        "ref_id": null,
+        "ref_id": [
+            "aba:94",
+            "12307"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, parvicellular division",
             "paraventricular nucleus of the hypothalamus, parvicellular division",
@@ -4834,7 +5035,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division",
-        "ref_id": null,
+        "ref_id": [
+            "aba:71",
+            "12313"
+        ],
         "variants": [
             "magnocellular division of the paraventricular nucleus",
             "paraventricular hypothalamic nucleus, magnocellular division",
@@ -4843,7 +5047,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division, medial magnocellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:79",
+            "12311"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, magnocellular division, medial magnocellular part"
         ]
@@ -4870,7 +5077,10 @@
     },
     {
         "name": "subfornical organ",
-        "ref_id": null,
+        "ref_id": [
+            "aba:338",
+            "12241"
+        ],
         "variants": [
             "corpus subfornicale",
             "organum subfornicale",
@@ -4928,7 +5138,10 @@
     },
     {
         "name": "postpiriform transition area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:566",
+            "11976"
+        ],
         "variants": [
             "amygdalopiriform ta",
             "amygdalopiriform transition area",
@@ -4963,7 +5176,10 @@
     },
     {
         "name": "parabrachial nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:867",
+            "12465"
+        ],
         "variants": [
             "parabrachial nucleus"
         ]
@@ -5144,7 +5360,10 @@
     },
     {
         "name": "entorhinal area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:909",
+            "11826"
+        ],
         "variants": [
             "area 28 of brodmann",
             "area entorhinalis",
@@ -5168,7 +5387,10 @@
     },
     {
         "name": "subiculum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:502",
+            "12021"
+        ],
         "variants": [
             "subiculum",
             "subiculum hippocampi"
@@ -5176,7 +5398,10 @@
     },
     {
         "name": "area postrema",
-        "ref_id": null,
+        "ref_id": [
+            "aba:207",
+            "12466"
+        ],
         "variants": [
             "area postrema",
             "chemoreceptor trigger zone"
@@ -5216,7 +5441,10 @@
     },
     {
         "name": "main olfactory bulb, mitral layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:236",
+            "11818"
+        ],
         "variants": [
             "main olfactory bulb, mitral layer",
             "mitral layer of the main olfactory bulb"
@@ -5241,14 +5469,20 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, parvicellular division, anterior parvicellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:55",
+            "12306"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, parvicellular division, anterior parvicellular part"
         ]
     },
     {
         "name": "nucleus raphe pontis",
-        "ref_id": null,
+        "ref_id": [
+            "aba:238",
+            "12398"
+        ],
         "variants": [
             "nucleus raphe pontis",
             "nucleus raphes pontis",
@@ -5603,7 +5837,10 @@
     },
     {
         "name": "accessory olfactory bulb, mitral layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:204",
+            "11822"
+        ],
         "variants": [
             "accessory olfactory bulb, mitral layer",
             "mitral layer of the accessory olfactory bulb"
@@ -5621,7 +5858,10 @@
     },
     {
         "name": "caudoputamen",
-        "ref_id": null,
+        "ref_id": [
+            "aba:672",
+            "11863"
+        ],
         "variants": [
             "caudate putamen",
             "caudate-putamen",
@@ -5674,7 +5914,10 @@
     },
     {
         "name": "hippocampal region",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1080",
+            "12030"
+        ],
         "variants": [
             "hippocampal",
             "hippocampal region"
@@ -5682,7 +5925,10 @@
     },
     {
         "name": "cerebral nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:623",
+            "12109"
+        ],
         "variants": [
             "cerebral nuclei",
             "subcortical nuclei"
@@ -5762,7 +6008,10 @@
     },
     {
         "name": "bed nuclei of the stria terminalis",
-        "ref_id": null,
+        "ref_id": [
+            "aba:351",
+            "11840"
+        ],
         "variants": [
             "bed nuclei of the stria terminalis",
             "bed nuclei stria terminalis",
@@ -5824,7 +6073,10 @@
     },
     {
         "name": "somatomotor areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:500",
+            "12100"
+        ],
         "variants": [
             "motor area",
             "motor cortex",
@@ -5942,7 +6194,10 @@
     },
     {
         "name": "superior salivatory nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:462",
+            "12567"
+        ],
         "variants": [
             "nucleus salivarius superior",
             "nucleus salivatorius cranialis",
@@ -6023,7 +6278,10 @@
     },
     {
         "name": "tuberal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:614",
+            "12252"
+        ],
         "variants": [
             "nucleus hypothalamicus ventromedialis",
             "nucleus ventromedialis hypothalami",
@@ -6036,7 +6294,10 @@
     },
     {
         "name": "nucleus of darkschewitsch",
-        "ref_id": null,
+        "ref_id": [
+            "aba:587",
+            "12421"
+        ],
         "variants": [
             "darkshevich's nucleus",
             "nucleus accessorius",
@@ -6082,7 +6343,10 @@
     },
     {
         "name": "spinal vestibular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:225",
+            "12484"
+        ],
         "variants": [
             "caudal vestibular nucleus",
             "descending vestibular nucleus",
@@ -6103,7 +6367,10 @@
     },
     {
         "name": "islands of calleja",
-        "ref_id": null,
+        "ref_id": [
+            "aba:481",
+            "11919"
+        ],
         "variants": [
             "insula callejae",
             "islands of calleja"
@@ -6173,7 +6440,10 @@
     },
     {
         "name": "external cuneate nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:903",
+            "12511"
+        ],
         "variants": [
             "accessory cuneate nucleus",
             "external cuneate nucleus",
@@ -6197,7 +6467,10 @@
     },
     {
         "name": "midline group of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:571",
+            "12190"
+        ],
         "variants": [
             "midline group of the dorsal thalamus"
         ]
@@ -6340,7 +6613,10 @@
     },
     {
         "name": "abducens nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:653",
+            "12445"
+        ],
         "variants": [
             "abducens nerve nucleus",
             "abducens nucleus",
@@ -6361,7 +6637,10 @@
     },
     {
         "name": "ventrolateral preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:689",
+            "12591"
+        ],
         "variants": [
             "intermediate nucleus",
             "intermediate nucleus of the preoptic area",
@@ -6373,7 +6652,10 @@
     },
     {
         "name": "medial preoptic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:523",
+            "12294"
+        ],
         "variants": [
             "area praeoptica medialis",
             "area preopticus medialis",
@@ -6432,7 +6714,10 @@
     },
     {
         "name": "copula pyramidis",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1033",
+            "12155"
+        ],
         "variants": [
             "copula of the pyramis",
             "copula pyramidis",
@@ -6441,7 +6726,10 @@
     },
     {
         "name": "piriform area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:961",
+            "11972"
+        ],
         "variants": [
             "(pre-)piriform cortex",
             "area prepiriformis",
@@ -6478,7 +6766,10 @@
     },
     {
         "name": "laterodorsal tegmental nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:162",
+            "12416"
+        ],
         "variants": [
             "laterodorsal tegmental nucleus"
         ]
@@ -6689,7 +6980,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, medial zone",
-        "ref_id": null,
+        "ref_id": [
+            "aba:660",
+            "12309"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, medial zone"
         ]
@@ -6780,7 +7074,10 @@
     },
     {
         "name": "arcuate hypothalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:223",
+            "12297"
+        ],
         "variants": [
             "arcuate hypothalamic nucleus",
             "arcuate nucleus",
@@ -6875,7 +7172,10 @@
     },
     {
         "name": "nucleus of the lateral lemniscus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:612",
+            "12496"
+        ],
         "variants": [
             "nucleus of the lateral lemniscus",
             "paralemniscal nucleus"
@@ -7010,7 +7310,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, parvicellular division, periventricular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:110",
+            "12304"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, parvicellular division, periventricular part"
         ]
@@ -7078,7 +7381,10 @@
     },
     {
         "name": "medial pretectal area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:531",
+            "12344"
+        ],
         "variants": [
             "medial pretectal area",
             "medial pretectal nucleus"
@@ -7086,7 +7392,10 @@
     },
     {
         "name": "suprageniculate nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:325",
+            "12213"
+        ],
         "variants": [
             "nucleus suprageniculatus",
             "suprageniculate nucleus",
@@ -7095,7 +7404,10 @@
     },
     {
         "name": "cuneiform nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:616",
+            "12379"
+        ],
         "variants": [
             "area parabigeminalis",
             "cuneiform nucleus",
@@ -7105,7 +7417,10 @@
     },
     {
         "name": "septofimbrial nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:310",
+            "11881"
+        ],
         "variants": [
             "nucleus septalis fimbrialis",
             "nucleus septofimbrialis",
@@ -7261,7 +7576,10 @@
     },
     {
         "name": "dentate nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:846",
+            "12165"
+        ],
         "variants": [
             "dentate cerebellar nucleus",
             "dentate nucleus",
@@ -7295,14 +7613,20 @@
     },
     {
         "name": "supratrigeminal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:534",
+            "12367"
+        ],
         "variants": [
             "supratrigeminal nucleus"
         ]
     },
     {
         "name": "superior vestibular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:217",
+            "12485"
+        ],
         "variants": [
             "nucleus bechterew",
             "nucleus of bechterew",
@@ -7332,7 +7656,10 @@
     },
     {
         "name": "anterior hypothalamic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:80",
+            "12285"
+        ],
         "variants": [
             "anterior hypothalamic area",
             "anterior hypothalamic nucleus",
@@ -7375,7 +7702,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, descending division",
-        "ref_id": null,
+        "ref_id": [
+            "aba:63",
+            "12318"
+        ],
         "variants": [
             "descending division of the paraventricular nucleus",
             "paraventricular hypothalamic nucleus, descending division",
@@ -7393,7 +7723,10 @@
     },
     {
         "name": "red nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:214",
+            "12549"
+        ],
         "variants": [
             "nucleus rotundus subthalamo-peduncularis",
             "nucleus ruber",
@@ -7418,7 +7751,10 @@
     },
     {
         "name": "submedial nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:366",
+            "12188"
+        ],
         "variants": [
             "gelatinosus thalamic nucleus",
             "nucleus submedius thalami",
@@ -7439,7 +7775,10 @@
     },
     {
         "name": "edinger-westphal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:975",
+            "12566"
+        ],
         "variants": [
             "accessory oculomotor nucleus",
             "edinger-westphal nucleus",
@@ -7574,7 +7913,10 @@
     },
     {
         "name": "medullary reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:395",
+            "12366"
+        ],
         "variants": [
             "medullary reticular nucleus"
         ]
@@ -7736,7 +8078,10 @@
     },
     {
         "name": "ventral medial nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:685",
+            "12217"
+        ],
         "variants": [
             "ventral medial nucleus of the thalamus",
             "ventral medial nucleus thalamus",
@@ -7817,7 +8162,10 @@
     },
     {
         "name": "preparasubthalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:356",
+            "12625"
+        ],
         "variants": [
             "preparasubthalamic nucleus"
         ]
@@ -7854,14 +8202,20 @@
     },
     {
         "name": "anterior group of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:239",
+            "12173"
+        ],
         "variants": [
             "anterior group of the dorsal thalamus"
         ]
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division, anterior magnocellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:47",
+            "12312"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, magnocellular division, anterior magnocellular part"
         ]
@@ -7931,7 +8285,10 @@
     },
     {
         "name": "ventral part of the lateral geniculate complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:178",
+            "12232"
+        ],
         "variants": [
             "corpus geniculatum externum, nucleus accessorius",
             "corpus geniculatum laterale, pars oralis",
@@ -7978,7 +8335,10 @@
     },
     {
         "name": "main olfactory bulb",
-        "ref_id": null,
+        "ref_id": [
+            "aba:507",
+            "11815"
+        ],
         "variants": [
             "bulbus olfactorius",
             "main olfactory bulb",
@@ -8062,7 +8422,10 @@
     },
     {
         "name": "granular lamina of the cochlear nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:112",
+            "12503"
+        ],
         "variants": [
             "cochlear nuclei, granular lamina",
             "granular lamina of the cochlear nuclei",
@@ -8199,7 +8562,10 @@
     },
     {
         "name": "subthalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:470",
+            "12251"
+        ],
         "variants": [
             "body of forel",
             "body of luys",
@@ -8213,7 +8579,10 @@
     },
     {
         "name": "field ca1",
-        "ref_id": null,
+        "ref_id": [
+            "aba:382",
+            "12032"
+        ],
         "variants": [
             "ca1 field",
             "ca1 field of ammon's horn",
@@ -8245,7 +8614,10 @@
     },
     {
         "name": "field ca3",
-        "ref_id": null,
+        "ref_id": [
+            "aba:463",
+            "12044"
+        ],
         "variants": [
             "ca3 field",
             "ca3 field of ammon's horn",
@@ -8260,7 +8632,10 @@
     },
     {
         "name": "field ca2",
-        "ref_id": null,
+        "ref_id": [
+            "aba:423",
+            "12039"
+        ],
         "variants": [
             "ca2 field",
             "ca2 field of ammon's horn",
@@ -8302,7 +8677,10 @@
     },
     {
         "name": "dorsal terminal nucleus of the accessory optic tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:75",
+            "12532"
+        ],
         "variants": [
             "dorsal terminal nucleus accessory optic tract",
             "dorsal terminal nucleus of the accessory optic tract"
@@ -8319,7 +8697,10 @@
     },
     {
         "name": "hypoglossal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:773",
+            "12564"
+        ],
         "variants": [
             "hypoglossal nerve nucleus",
             "hypoglossal nucleus",
@@ -8338,7 +8719,10 @@
     },
     {
         "name": "medial terminal nucleus of the accessory optic tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:58",
+            "12534"
+        ],
         "variants": [
             "medial terminal nucleus accessory optic tract",
             "medial terminal nucleus of the accessory optic tract"
@@ -8444,7 +8828,10 @@
     },
     {
         "name": "nucleus of roller",
-        "ref_id": null,
+        "ref_id": [
+            "aba:177",
+            "12480"
+        ],
         "variants": [
             "nucleus of roller",
             "nucleus parvocellularis nervi hypoglossi",
@@ -8498,7 +8885,10 @@
     },
     {
         "name": "central linear nucleus raphe",
-        "ref_id": null,
+        "ref_id": [
+            "aba:591",
+            "12406"
+        ],
         "variants": [
             "caudal linear nucleus of the raphe",
             "central linear nucleus raphe"
@@ -8593,7 +8983,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, lateral zone",
-        "ref_id": null,
+        "ref_id": [
+            "aba:652",
+            "12308"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, lateral zone"
         ]
@@ -8620,7 +9013,10 @@
     },
     {
         "name": "primary visual area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:385",
+            "12005"
+        ],
         "variants": [
             "area 17 of brodmann",
             "area 17 of swanson",
@@ -8637,7 +9033,10 @@
     },
     {
         "name": "primary motor area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:985",
+            "11866"
+        ],
         "variants": [
             "area f1",
             "motor area",
@@ -8662,7 +9061,10 @@
     },
     {
         "name": "pontine central gray",
-        "ref_id": null,
+        "ref_id": [
+            "aba:898",
+            "12410"
+        ],
         "variants": [
             "central gray of pons",
             "central gray of the pons",
@@ -8713,7 +9115,10 @@
     },
     {
         "name": "gigantocellular reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1048",
+            "12375"
+        ],
         "variants": [
             "gigantocellular nucleus",
             "gigantocellular reticular nucleus",
@@ -8733,7 +9138,10 @@
     },
     {
         "name": "nodulus (x)",
-        "ref_id": null,
+        "ref_id": [
+            "aba:968",
+            "12138"
+        ],
         "variants": [
             "nodulus (x)"
         ]
@@ -8810,7 +9218,10 @@
     },
     {
         "name": "nucleus of the solitary tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:651",
+            "12474"
+        ],
         "variants": [
             "nuclei tractus solitarii",
             "nucleus fasciculus solitarius",
@@ -8853,7 +9264,10 @@
     },
     {
         "name": "olivary pretectal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:706",
+            "12349"
+        ],
         "variants": [
             "nucleus olivaris colliculi superioris",
             "nucleus olivaris corporis quadrigemini anterioris",
@@ -8876,7 +9290,10 @@
     },
     {
         "name": "anterodorsal preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:72",
+            "12289"
+        ],
         "variants": [
             "anterodorsal preoptic nucleus"
         ]
@@ -8928,7 +9345,10 @@
     },
     {
         "name": "lateral vestibular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:209",
+            "12486"
+        ],
         "variants": [
             "deiter's nucleus",
             "lateral nucleus of deiters",
@@ -8949,7 +9369,10 @@
     },
     {
         "name": "supramammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:525",
+            "12263"
+        ],
         "variants": [
             "nucleus supramamillaris hypothalami",
             "nucleus supramammillaris",
@@ -8981,21 +9404,30 @@
     },
     {
         "name": "retrohippocampal region",
-        "ref_id": null,
+        "ref_id": [
+            "aba:822",
+            "11825"
+        ],
         "variants": [
             "retrohippocampal region"
         ]
     },
     {
         "name": "accessory olfactory bulb",
-        "ref_id": null,
+        "ref_id": [
+            "aba:151",
+            "11820"
+        ],
         "variants": [
             "accessory olfactory bulb"
         ]
     },
     {
         "name": "superior colliculus, motor related",
-        "ref_id": null,
+        "ref_id": [
+            "aba:294",
+            "12596"
+        ],
         "variants": [
             "superior colliculus, motor related"
         ]
@@ -9048,7 +9480,10 @@
     },
     {
         "name": "folium-tuber vermis (vii)",
-        "ref_id": null,
+        "ref_id": [
+            "aba:944",
+            "12131"
+        ],
         "variants": [
             "folium-tuber vermis (vii)"
         ]
@@ -9111,7 +9546,10 @@
     },
     {
         "name": "parastrial nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1109",
+            "12286"
+        ],
         "variants": [
             "parastrial nucleus",
             "parastriatal nucleus"
@@ -9155,7 +9593,10 @@
     },
     {
         "name": "simple lobule",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1007",
+            "12142"
+        ],
         "variants": [
             "lobule h vi of larsell",
             "lobulus quadrangularis pars  caudalis/posterior",
@@ -9195,7 +9636,10 @@
     },
     {
         "name": "medial mammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:491",
+            "12259"
+        ],
         "variants": [
             "internal mammillary nucleus",
             "medial mamillary nucleus",
@@ -9221,7 +9665,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, descending division, lateral parvicellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:455",
+            "12315"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, descending division, lateral parvicellular part"
         ]
@@ -9310,7 +9757,10 @@
     },
     {
         "name": "anteroventral periventricular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:272",
+            "12325"
+        ],
         "variants": [
             "anteroventral periventricular nucleus",
             "nucleus periventricularis anteroventralis",
@@ -9338,7 +9788,10 @@
     },
     {
         "name": "lateral septal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:242",
+            "11915"
+        ],
         "variants": [
             "lateral parolfactory nucleus",
             "lateral septal nucleus",
@@ -9369,7 +9822,10 @@
     },
     {
         "name": "perihypoglossal nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:154",
+            "12483"
+        ],
         "variants": [
             "perihypoglossal nuclei"
         ]
@@ -9594,7 +10050,10 @@
     },
     {
         "name": "retrosplenial area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:254",
+            "12073"
+        ],
         "variants": [
             "regio retrosplenialis",
             "retrosplenial area",
@@ -9696,7 +10155,10 @@
     },
     {
         "name": "paramedian lobule",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1025",
+            "12154"
+        ],
         "variants": [
             "gracile lobule",
             "lobulus gracilis",
@@ -9709,7 +10171,10 @@
     },
     {
         "name": "striatum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:477",
+            "11838"
+        ],
         "variants": [
             "caudate putamen",
             "caudate-putamen",
@@ -9725,7 +10190,10 @@
     },
     {
         "name": "lateral septal complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:275",
+            "11916"
+        ],
         "variants": [
             "lateral septal complex"
         ]
@@ -9874,7 +10342,10 @@
     },
     {
         "name": "nucleus incertus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:604",
+            "12401"
+        ],
         "variants": [
             "nucleus incertus"
         ]
@@ -9906,7 +10377,10 @@
     },
     {
         "name": "anterior cingulate area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:31",
+            "12011"
+        ],
         "variants": [
             "agranular cingulate area",
             "anterior cingulate area",
@@ -9938,7 +10412,10 @@
     },
     {
         "name": "nucleus of the trapezoid body",
-        "ref_id": null,
+        "ref_id": [
+            "aba:642",
+            "12501"
+        ],
         "variants": [
             "medial nucleus of the trapezoid body",
             "medial nucleus of trapezoid body",
@@ -10024,7 +10501,10 @@
     },
     {
         "name": "postsubiculum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1037",
+            "11835"
+        ],
         "variants": [
             "postsubiculum"
         ]
@@ -10060,7 +10540,10 @@
     },
     {
         "name": "lateral posterior nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:218",
+            "12211"
+        ],
         "variants": [
             "lateral posterior nucleus",
             "lateral posterior nucleus of thalamus",
@@ -10135,7 +10618,10 @@
     },
     {
         "name": "primary somatosensory area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:322",
+            "11988"
+        ],
         "variants": [
             "anterior parietal cortex",
             "postcentral tactile area",
@@ -10191,7 +10677,10 @@
     },
     {
         "name": "mammillary body",
-        "ref_id": null,
+        "ref_id": [
+            "aba:331",
+            "12267"
+        ],
         "variants": [
             "corpora mamillaria",
             "corpora mammillaria",
@@ -10262,7 +10751,10 @@
     },
     {
         "name": "septohippocampal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:333",
+            "11880"
+        ],
         "variants": [
             "nucleus septohippocampalis",
             "septohippocampal nucleus"
@@ -10603,7 +11095,10 @@
     },
     {
         "name": "nucleus of the optic tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:628",
+            "12348"
+        ],
         "variants": [
             "large-celled nucleus of optic tract",
             "lentiform nucleus of pretectal area",
@@ -10646,7 +11141,10 @@
     },
     {
         "name": "nucleus intercalatus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:161",
+            "12482"
+        ],
         "variants": [
             "intercalated nucleus of medulla",
             "intercalated nucleus of the medulla",
@@ -10708,7 +11206,10 @@
     },
     {
         "name": "parvicellular reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:852",
+            "12571"
+        ],
         "variants": [
             "nucleus parvocellularis",
             "nucleus reticularis parvicellularis",
@@ -10762,7 +11263,10 @@
     },
     {
         "name": "visceral area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:677",
+            "11996"
+        ],
         "variants": [
             "area ig of mesulam",
             "cortex insularis granularis",
@@ -10892,7 +11396,10 @@
     },
     {
         "name": "anteroventral nucleus of thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:255",
+            "12174"
+        ],
         "variants": [
             "anterior ventral nucleus of thalamus",
             "anteroprincipal thalamic nucleus",
@@ -10924,7 +11431,10 @@
     },
     {
         "name": "medial geniculate complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:475",
+            "12579"
+        ],
         "variants": [
             "corpus geniculatum mediale",
             "corpus geniculatus medialis",
@@ -10979,7 +11489,10 @@
     },
     {
         "name": "superior colliculus, sensory related",
-        "ref_id": null,
+        "ref_id": [
+            "aba:302",
+            "12450"
+        ],
         "variants": [
             "sensory superior colliculus",
             "superior colliculus, sensory related"
@@ -11039,7 +11552,10 @@
     },
     {
         "name": "ventral tegmental area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:749",
+            "12434"
+        ],
         "variants": [
             "area tegmentalis ventralis",
             "ventral tegmental area",
@@ -11099,7 +11615,10 @@
     },
     {
         "name": "dentate gyrus medial blade",
-        "ref_id": null,
+        "ref_id": [
+            "aba:799",
+            "12058"
+        ],
         "variants": [
             "dentate gyrus medial blade"
         ]
@@ -11178,7 +11697,10 @@
     },
     {
         "name": "fastigial nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:989",
+            "12161"
+        ],
         "variants": [
             "fastigial cerebellar nucleus",
             "fastigial nucleus",
@@ -11263,7 +11785,10 @@
     },
     {
         "name": "accessory olfactory bulb, glomerular layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:188",
+            "11821"
+        ],
         "variants": [
             "accessory olfactory bulb, glomerular layer",
             "glomerular layer of the accessory olfactory bulb"
@@ -11280,7 +11805,10 @@
     },
     {
         "name": "ventral tegmental nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:757",
+            "12419"
+        ],
         "variants": [
             "area tegmentalis ventralis",
             "deep tegmental nucleus of gudden",
@@ -11307,7 +11835,10 @@
     },
     {
         "name": "cerebellar cortex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:528",
+            "12113"
+        ],
         "variants": [
             "cerebellar cortex",
             "cortex cerebelli"
@@ -11353,7 +11884,10 @@
     },
     {
         "name": "claustrum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:583",
+            "12082"
+        ],
         "variants": [
             "claustrum",
             "dorsal claustrum",
@@ -11485,7 +12019,10 @@
     },
     {
         "name": "subparafascicular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:406",
+            "12224"
+        ],
         "variants": [
             "nucleus subparafascicularis thalami",
             "subparafascicular nucleus",
@@ -11514,7 +12051,10 @@
     },
     {
         "name": "principal sensory nucleus of the trigeminal",
-        "ref_id": null,
+        "ref_id": [
+            "aba:7",
+            "12528"
+        ],
         "variants": [
             "chief sensory nucleus",
             "chief sensory trigeminal nucleus",
@@ -11549,7 +12089,10 @@
     },
     {
         "name": "lateral reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:235",
+            "12543"
+        ],
         "variants": [
             "lateral reticular nucleus",
             "nucleus lateralis medullae oblongatae",
@@ -11567,7 +12110,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:103",
+            "12310"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part"
         ]
@@ -11610,7 +12156,10 @@
     },
     {
         "name": "parasubthalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:364",
+            "12626"
+        ],
         "variants": [
             "parasubthalamic nucleus"
         ]
@@ -11635,7 +12184,10 @@
     },
     {
         "name": "accessory olfactory bulb, granular layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:196",
+            "11823"
+        ],
         "variants": [
             "accessory olfactory bulb, granular layer",
             "granular layer of the accessory olfactory bulb"
@@ -11643,7 +12195,10 @@
     },
     {
         "name": "medial preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:515",
+            "12293"
+        ],
         "variants": [
             "area praeoptica medialis",
             "area preopticus medialis",
@@ -11710,7 +12265,10 @@
     },
     {
         "name": "declive (vi)",
-        "ref_id": null,
+        "ref_id": [
+            "aba:936",
+            "12126"
+        ],
         "variants": [
             "declive (vi)"
         ]
@@ -11733,7 +12291,10 @@
     },
     {
         "name": "posterior parietal association areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:22",
+            "12071"
+        ],
         "variants": [
             "posterior parietal association areas"
         ]
@@ -11974,7 +12535,10 @@
     },
     {
         "name": "entorhinal area, lateral part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:918",
+            "11827"
+        ],
         "variants": [
             "entorhinal area, lateral part",
             "lateral part of the entorhinal area"
@@ -12019,7 +12583,10 @@
     },
     {
         "name": "posterior auditory area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1027",
+            "12104"
+        ],
         "variants": [
             "posterior auditory area",
             "posterior auditory field"
@@ -12170,7 +12737,10 @@
     },
     {
         "name": "intralaminar nuclei of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:51",
+            "12204"
+        ],
         "variants": [
             "intralaminar group of the dorsal thalamus",
             "intralaminar nuclei of the dorsal thalamus"
@@ -12178,7 +12748,10 @@
     },
     {
         "name": "reticular nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:262",
+            "12235"
+        ],
         "variants": [
             "nuclei reticulares",
             "nucleus reticularis",
@@ -12238,7 +12811,10 @@
     },
     {
         "name": "midbrain reticular nucleus, parvicellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:555",
+            "12382"
+        ],
         "variants": [
             "midbrain reticular nucleus, parvicellular part",
             "parvicellular part of the midbrain reticular nucleus"
@@ -12331,7 +12907,10 @@
     },
     {
         "name": "dorsomedial nucleus of the hypothalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:830",
+            "12302"
+        ],
         "variants": [
             "dorsomedial hypothalamic nucleus",
             "dorsomedial nucleus",
@@ -12386,7 +12965,10 @@
     },
     {
         "name": "flocculus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1049",
+            "12159"
+        ],
         "variants": [
             "flocculus",
             "flocculus cerebelli"
@@ -12449,7 +13031,10 @@
     },
     {
         "name": "cerebrum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:567",
+            "11814"
+        ],
         "variants": [
             "cerebrum"
         ]
@@ -12579,7 +13164,10 @@
     },
     {
         "name": "primary auditory area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1002",
+            "12103"
+        ],
         "variants": [
             "auditory core region",
             "primary auditory area",
@@ -12636,7 +13224,10 @@
     },
     {
         "name": "oculomotor nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:35",
+            "12449"
+        ],
         "variants": [
             "nucleus nervi oculomotorii",
             "nucleus oculomotorius",
@@ -12647,7 +13238,10 @@
     },
     {
         "name": "medial group of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:444",
+            "12182"
+        ],
         "variants": [
             "medial group of the dorsal thalamus"
         ]
@@ -12793,7 +13387,10 @@
     },
     {
         "name": "cerebral cortex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:688",
+            "11812"
+        ],
         "variants": [
             "cerebral cortex",
             "cortex",
@@ -12841,7 +13438,10 @@
     },
     {
         "name": "secondary motor area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:993",
+            "11922"
+        ],
         "variants": [
             "secondary motor area"
         ]
@@ -12911,7 +13511,10 @@
     },
     {
         "name": "central lateral nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:575",
+            "12208"
+        ],
         "variants": [
             "central lateral nucleus",
             "central lateral nucleus of thalamus",
@@ -12933,7 +13536,10 @@
     },
     {
         "name": "nucleus of the lateral olfactory tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:619",
+            "11978"
+        ],
         "variants": [
             "nucleus of lateral olfactory tract",
             "nucleus of the lateral olfactory tract",
@@ -12987,14 +13593,20 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, parvicellular division, medial parvicellular part, dorsal zone",
-        "ref_id": null,
+        "ref_id": [
+            "aba:87",
+            "12305"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, parvicellular division, medial parvicellular part, dorsal zone"
         ]
     },
     {
         "name": "endopiriform nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:942",
+            "12083"
+        ],
         "variants": [
             "endopiriform nucleus"
         ]
@@ -13107,7 +13719,10 @@
     },
     {
         "name": "infracerebellar nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:372",
+            "12476"
+        ],
         "variants": [
             "infracerebellar nucleus"
         ]
@@ -13150,21 +13765,30 @@
     },
     {
         "name": "nucleus z",
-        "ref_id": null,
+        "ref_id": [
+            "aba:789",
+            "12512"
+        ],
         "variants": [
             "nucleus z"
         ]
     },
     {
         "name": "nucleus x",
-        "ref_id": null,
+        "ref_id": [
+            "aba:765",
+            "12478"
+        ],
         "variants": [
             "nucleus x"
         ]
     },
     {
         "name": "nucleus y",
-        "ref_id": null,
+        "ref_id": [
+            "aba:781",
+            "12477"
+        ],
         "variants": [
             "nucleus y"
         ]
@@ -13212,7 +13836,10 @@
     },
     {
         "name": "intermediodorsal nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:59",
+            "12187"
+        ],
         "variants": [
             "intermediodorsal nucleus",
             "intermediodorsal nucleus of the thalamus",
@@ -13258,7 +13885,10 @@
     },
     {
         "name": "tuberomammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:557",
+            "12266"
+        ],
         "variants": [
             "caudal magnocellular nucleus",
             "magnocellular tuberomammillary nucleus",
@@ -13376,7 +14006,10 @@
     },
     {
         "name": "dentate gyrus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:726",
+            "12049"
+        ],
         "variants": [
             "area dentata",
             "dentate gyrus",
@@ -13387,7 +14020,10 @@
     },
     {
         "name": "rhomboid nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:189",
+            "12205"
+        ],
         "variants": [
             "nucleus rhomboidalis",
             "nucleus rhomboidalis thalami",
@@ -13399,7 +14035,10 @@
     },
     {
         "name": "medial vestibular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:202",
+            "12487"
+        ],
         "variants": [
             "chief vestibular nucleus",
             "dorsal vestibular nucleus",
@@ -13505,7 +14144,10 @@
     },
     {
         "name": "cuneate nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:711",
+            "12513"
+        ],
         "variants": [
             "burdach's nucleus",
             "cuneate nucleus",
@@ -13517,7 +14159,10 @@
     },
     {
         "name": "linear nucleus of the medulla",
-        "ref_id": null,
+        "ref_id": [
+            "aba:203",
+            "12546"
+        ],
         "variants": [
             "linear nucleus medulla",
             "linear nucleus of the medulla"
@@ -13683,7 +14328,10 @@
     },
     {
         "name": "main olfactory bulb, outer plexiform layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:244",
+            "11817"
+        ],
         "variants": [
             "main olfactory bulb, outer plexiform layer",
             "outer plexiform layer of the main olfactory bulb"
@@ -13700,7 +14348,10 @@
     },
     {
         "name": "uvula (ix)",
-        "ref_id": null,
+        "ref_id": [
+            "aba:957",
+            "12135"
+        ],
         "variants": [
             "uvula (ix)"
         ]
@@ -13716,7 +14367,10 @@
     },
     {
         "name": "vestibular nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:701",
+            "12488"
+        ],
         "variants": [
             "nuclei vestibulares",
             "vestibular nuclear complex",
@@ -13811,7 +14465,10 @@
     },
     {
         "name": "ventral group of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:637",
+            "12215"
+        ],
         "variants": [
             "ventral group of the dorsal thalamus"
         ]
@@ -13856,7 +14513,10 @@
     },
     {
         "name": "main olfactory bulb, inner plexiform layer",
-        "ref_id": null,
+        "ref_id": [
+            "aba:228",
+            "11819"
+        ],
         "variants": [
             "inner plexiform layer of the main olfactory bulb",
             "main olfactory bulb, inner plexiform layer"
@@ -13985,7 +14645,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, descending division, medial parvicellular part, ventral zone",
-        "ref_id": null,
+        "ref_id": [
+            "aba:464",
+            "12317"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, descending division, medial parvicellular part, ventral zone"
         ]
@@ -14003,7 +14666,10 @@
     },
     {
         "name": "nucleus raphe pallidus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:230",
+            "12396"
+        ],
         "variants": [
             "nucleus raphe pallidus",
             "nucleus raphes pallidus",
@@ -14119,7 +14785,10 @@
     },
     {
         "name": "nucleus prepositus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:169",
+            "12481"
+        ],
         "variants": [
             "nucleus praepositus",
             "nucleus praepositus hypoglossi",
@@ -14185,7 +14854,10 @@
     },
     {
         "name": "median preoptic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:452",
+            "12326"
+        ],
         "variants": [
             "median preoptic nucleus",
             "nucleus praeopticus medianus",
@@ -14245,7 +14917,10 @@
     },
     {
         "name": "vascular organ of the lamina terminalis",
-        "ref_id": null,
+        "ref_id": [
+            "aba:763",
+            "12329"
+        ],
         "variants": [
             "organum vasculosum",
             "organum vasculosum of lamina terminalis",
@@ -14380,7 +15055,10 @@
     },
     {
         "name": "nucleus sagulum",
-        "ref_id": null,
+        "ref_id": [
+            "aba:271",
+            "12490"
+        ],
         "variants": [
             "nucleus sagulum",
             "sagulum",
@@ -14398,7 +15076,10 @@
     },
     {
         "name": "posterior hypothalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:946",
+            "12256"
+        ],
         "variants": [
             "area hypothalamica posterior",
             "area posterior hypothalami",
@@ -14450,7 +15131,10 @@
     },
     {
         "name": "rostral linear nucleus raphe",
-        "ref_id": null,
+        "ref_id": [
+            "aba:197",
+            "12407"
+        ],
         "variants": [
             "rostral linear nucleus of the raphe",
             "rostral linear nucleus raphe"
@@ -14458,7 +15142,10 @@
     },
     {
         "name": "anterior hypothalamic nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:88",
+            "12284"
+        ],
         "variants": [
             "anterior hypothalamic area",
             "anterior hypothalamic nucleus",
@@ -14619,7 +15306,10 @@
     },
     {
         "name": "substantia innominata",
-        "ref_id": null,
+        "ref_id": [
+            "aba:342",
+            "11874"
+        ],
         "variants": [
             "substantia innominata",
             "substantia innominata of  meynert",
@@ -14641,7 +15331,10 @@
     },
     {
         "name": "dorsal premammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:980",
+            "12260"
+        ],
         "variants": [
             "dorsal premammillary nucleus",
             "premammillary nucleus, dorsal part"
@@ -14774,7 +15467,10 @@
     },
     {
         "name": "lateral group of the dorsal thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:138",
+            "12210"
+        ],
         "variants": [
             "lateral group of the dorsal thalamus"
         ]
@@ -14909,7 +15605,10 @@
     },
     {
         "name": "ventral premammillary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1004",
+            "12268"
+        ],
         "variants": [
             "premammillary nucleus, ventral part",
             "ventral premammillary nucleus"
@@ -14926,7 +15625,10 @@
     },
     {
         "name": "vermal regions",
-        "ref_id": null,
+        "ref_id": [
+            "aba:645",
+            "12114"
+        ],
         "variants": [
             "central lobe of the cerebellum",
             "cerebellar vermis",
@@ -15112,7 +15814,10 @@
     },
     {
         "name": "midbrain reticular nucleus, magnocellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:539",
+            "12628"
+        ],
         "variants": [
             "magnocellular part of the midbrain reticular nucleus",
             "midbrain reticular nucleus, magnocellular part"
@@ -15160,7 +15865,10 @@
     },
     {
         "name": "dorsal column nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:720",
+            "12517"
+        ],
         "variants": [
             "dorsal column nuclei"
         ]
@@ -15330,7 +16038,10 @@
     },
     {
         "name": "nucleus ambiguus, ventral division",
-        "ref_id": null,
+        "ref_id": [
+            "aba:143",
+            "12570"
+        ],
         "variants": [
             "nucleus ambiguus, ventral division",
             "ventral division of the ambiguous nucleus"
@@ -15405,7 +16116,10 @@
     },
     {
         "name": "visual areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:669",
+            "11997"
+        ],
         "variants": [
             "visual areas",
             "visual cortex"
@@ -15557,7 +16271,10 @@
     },
     {
         "name": "interposed nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:91",
+            "12162"
+        ],
         "variants": [
             "interposed cerebellar nucleus",
             "interposed nucleus",
@@ -15586,7 +16303,10 @@
     },
     {
         "name": "superior central nucleus raphe",
-        "ref_id": null,
+        "ref_id": [
+            "aba:679",
+            "12405"
+        ],
         "variants": [
             "cell group b8",
             "median nucleus of the raphe",
@@ -15611,7 +16331,10 @@
     },
     {
         "name": "interstitial nucleus of cajal",
-        "ref_id": null,
+        "ref_id": [
+            "aba:67",
+            "12422"
+        ],
         "variants": [
             "interstitial nucleus of cajal",
             "interstitial nucleus of medial longitudinal fasciculus",
@@ -15622,7 +16345,10 @@
     },
     {
         "name": "bed nucleus of the anterior commissure",
-        "ref_id": null,
+        "ref_id": [
+            "aba:287",
+            "11859"
+        ],
         "variants": [
             "bed nucleus of anterior commissure",
             "bed nucleus of the anterior commissure",
@@ -15665,7 +16391,10 @@
     },
     {
         "name": "nucleus of the brachium of the inferior colliculus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:580",
+            "12491"
+        ],
         "variants": [
             "nucleus brachium inferior colliculus",
             "nucleus of the brachium of the inferior colliculus"
@@ -15735,7 +16464,10 @@
     },
     {
         "name": "precommissural nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:50",
+            "12430"
+        ],
         "variants": [
             "precommissural nucleus",
             "precommissural nucleus, periaqueductal gray"
@@ -15790,7 +16522,10 @@
     },
     {
         "name": "anterolateral visual area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:402",
+            "11999"
+        ],
         "variants": [
             "anterolateral visual area"
         ]
@@ -15827,7 +16562,10 @@
     },
     {
         "name": "dorsal tegmental nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:880",
+            "12420"
+        ],
         "variants": [
             "dorsal tegmental nucleus",
             "ganglion dorsale tegmenti",
@@ -15862,7 +16600,10 @@
     },
     {
         "name": "fields of forel",
-        "ref_id": null,
+        "ref_id": [
+            "aba:804",
+            "12227"
+        ],
         "variants": [
             "campus forelli",
             "fields of forel"
@@ -15881,7 +16622,10 @@
     },
     {
         "name": "anterior pretectal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:215",
+            "12345"
+        ],
         "variants": [
             "anterior pretectal nucleus"
         ]
@@ -16112,7 +16856,10 @@
     },
     {
         "name": "paragigantocellular reticular nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:938",
+            "12374"
+        ],
         "variants": [
             "paragigantocellular reticular nucleus"
         ]
@@ -16146,7 +16893,10 @@
     },
     {
         "name": "gustatory areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1057",
+            "11945"
+        ],
         "variants": [
             "area gu of paxinos",
             "gustatory area",
@@ -16182,7 +16932,10 @@
     },
     {
         "name": "nucleus accumbens",
-        "ref_id": null,
+        "ref_id": [
+            "aba:56",
+            "11865"
+        ],
         "variants": [
             "accumbens nucleus",
             "colliculus nuclei caudati",
@@ -16193,7 +16946,10 @@
     },
     {
         "name": "intergeniculate leaflet of the lateral geniculate complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:27",
+            "12233"
+        ],
         "variants": [
             "intergeniculate leaflet of the lateral geniculate complex",
             "intergeniculate leaflet, lateral geniculate complex",
@@ -16247,7 +17003,10 @@
     },
     {
         "name": "posterior limiting nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1029",
+            "12214"
+        ],
         "variants": [
             "posterior limitans nucleus of the thalamus",
             "posterior limitans thalamic nucleus",
@@ -16293,14 +17052,20 @@
     },
     {
         "name": "thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:549",
+            "12171"
+        ],
         "variants": [
             "thalamus"
         ]
     },
     {
         "name": "paraflocculus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1041",
+            "12158"
+        ],
         "variants": [
             "paraflocculus"
         ]
@@ -16334,7 +17099,10 @@
     },
     {
         "name": "ectorhinal area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:895",
+            "12014"
+        ],
         "variants": [
             "ectorhinal area",
             "ectorhinal cortex"
@@ -16342,7 +17110,10 @@
     },
     {
         "name": "lateral tegmental nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:283",
+            "12417"
+        ],
         "variants": [
             "lateral tegmental nucleus"
         ]
@@ -16409,7 +17180,10 @@
     },
     {
         "name": "orbital area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:714",
+            "12065"
+        ],
         "variants": [
             "cortex orbitofrontalis",
             "gyri orbitales",
@@ -16469,7 +17243,10 @@
     },
     {
         "name": "nucleus raphe magnus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:206",
+            "12397"
+        ],
         "variants": [
             "nucleus raphe magnus",
             "nucleus raphes magnus",
@@ -16504,7 +17281,10 @@
     },
     {
         "name": "lateral preoptic area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:226",
+            "12254"
+        ],
         "variants": [
             "area praeoptica lateralis",
             "area preoptica lateralis",
@@ -16517,7 +17297,10 @@
     },
     {
         "name": "auditory areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:247",
+            "11868"
+        ],
         "variants": [
             "auditory area",
             "auditory areas",
@@ -16570,7 +17353,10 @@
     },
     {
         "name": "ventral anterior-lateral complex of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:629",
+            "12216"
+        ],
         "variants": [
             "ventral anterior-lateral complex of the thalamus",
             "ventral anterolateral nucleus of the thalamus"
@@ -16605,7 +17391,10 @@
     },
     {
         "name": "parapyramidal nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:1069",
+            "12371"
+        ],
         "variants": [
             "parapyramidal nucleus",
             "peripyramidal nucleus"
@@ -16613,7 +17402,10 @@
     },
     {
         "name": "cortical amygdalar area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:631",
+            "11982"
+        ],
         "variants": [
             "cortex periamygdaloideus",
             "cortical amygdalar area",
@@ -16638,7 +17430,10 @@
     },
     {
         "name": "parasolitary nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:859",
+            "12548"
+        ],
         "variants": [
             "nucleus juxtasolitarius",
             "nucleus of fasciculus solitarius",
@@ -16698,7 +17493,10 @@
     },
     {
         "name": "cortical subplate",
-        "ref_id": null,
+        "ref_id": [
+            "aba:703",
+            "12108"
+        ],
         "variants": [
             "cortical subplate",
             "cortical subplate nuclei"
@@ -16733,7 +17531,10 @@
     },
     {
         "name": "posterolateral visual area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:425",
+            "12004"
+        ],
         "variants": [
             "posterolateral visual area"
         ]
@@ -16789,7 +17590,10 @@
     },
     {
         "name": "dorsal motor nucleus of the vagus nerve",
-        "ref_id": null,
+        "ref_id": [
+            "aba:839",
+            "12569"
+        ],
         "variants": [
             "dorsal efferent nucleus of vagus",
             "dorsal motor nucleus",
@@ -16925,7 +17729,10 @@
     },
     {
         "name": "pontine gray",
-        "ref_id": null,
+        "ref_id": [
+            "aba:931",
+            "12536"
+        ],
         "variants": [
             "griseum pontis",
             "nuclei brachii pontis",
@@ -16984,7 +17791,10 @@
     },
     {
         "name": "lateral terminal nucleus of the accessory optic tract",
-        "ref_id": null,
+        "ref_id": [
+            "aba:66",
+            "12533"
+        ],
         "variants": [
             "lateral terminal nucleus accessory optic tract",
             "lateral terminal nucleus of the accessory optic tract"
@@ -17277,7 +18087,10 @@
     },
     {
         "name": "anterior olfactory nucleus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:159",
+            "11946"
+        ],
         "variants": [
             "anterior olfactory nucleus",
             "area retrobulbaris",
@@ -17334,7 +18147,10 @@
     },
     {
         "name": "piriform-amygdalar area",
-        "ref_id": null,
+        "ref_id": [
+            "aba:788",
+            "11977"
+        ],
         "variants": [
             "piriform amygdalar area",
             "piriform amygdaloid area",
@@ -17354,7 +18170,10 @@
     },
     {
         "name": "major island of calleja",
-        "ref_id": null,
+        "ref_id": [
+            "aba:489",
+            "11918"
+        ],
         "variants": [
             "islands of calleja, major island",
             "large island of calleja",
@@ -17437,7 +18256,10 @@
     },
     {
         "name": "central medial nucleus of the thalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:599",
+            "12206"
+        ],
         "variants": [
             "central medial nucleus",
             "central medial nucleus of thalamus",
@@ -17494,7 +18316,10 @@
     },
     {
         "name": "epithalamus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:958",
+            "12220"
+        ],
         "variants": [
             "epithalamus"
         ]
@@ -17539,7 +18364,10 @@
     },
     {
         "name": "cochlear nuclei",
-        "ref_id": null,
+        "ref_id": [
+            "aba:607",
+            "12509"
+        ],
         "variants": [
             "cochlear nuclei",
             "cochlear nucleus",
@@ -17548,7 +18376,10 @@
     },
     {
         "name": "paraventricular hypothalamic nucleus, descending division, dorsal parvicellular part",
-        "ref_id": null,
+        "ref_id": [
+            "aba:439",
+            "12316"
+        ],
         "variants": [
             "paraventricular hypothalamic nucleus, descending division, dorsal parvicellular part"
         ]
@@ -17564,7 +18395,10 @@
     },
     {
         "name": "periaqueductal gray",
-        "ref_id": null,
+        "ref_id": [
+            "aba:795",
+            "12431"
+        ],
         "variants": [
             "anulus aquaeductus",
             "anulus aqueductus cerebri",
@@ -17587,7 +18421,10 @@
     },
     {
         "name": "temporal association areas",
-        "ref_id": null,
+        "ref_id": [
+            "aba:541",
+            "12079"
+        ],
         "variants": [
             "temporal association areas",
             "temporal association cortex",
@@ -17660,7 +18497,10 @@
     },
     {
         "name": "nucleus raphe obscurus",
-        "ref_id": null,
+        "ref_id": [
+            "aba:222",
+            "12395"
+        ],
         "variants": [
             "nucleus raphe obscurus",
             "nucleus raphes obscurus",
@@ -17858,7 +18698,10 @@
     },
     {
         "name": "dentate gyrus crest",
-        "ref_id": null,
+        "ref_id": [
+            "aba:734",
+            "12050"
+        ],
         "variants": [
             "dentate gyrus crest"
         ]
@@ -18021,7 +18864,10 @@
     },
     {
         "name": "medial septal complex",
-        "ref_id": null,
+        "ref_id": [
+            "aba:904",
+            "11872"
+        ],
         "variants": [
             "medial septal complex"
         ]

@@ -43,7 +43,7 @@ def merge_dicts(regions,regiondict):
             for region in others["variants"]:
                 if not region["name"] in holder["variants"]:
                     holder["variants"].append(region["name"])
-            holder["ref_id"] = holder["ref_id"].append(others["ref_id"])
+            holder["ref_id"] = holder["ref_id"] + [others["ref_id"]]
             regions[name] = holder
         else:
             variants = []
