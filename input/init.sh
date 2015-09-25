@@ -50,12 +50,11 @@ deepdive sql "
 );
 "
 
-# If the cognitiveatlas annotation file doesn't exist, create it
-# I'm not sure if we will need this yet, but it doesn't hurt
-#if ! [[ -e ../udf/NER/cognitiveatlas_annotation.txt ]]; then
-#    echo "Generating Cognitive Atlas annotation file..."
-#    python ../udf/cognitiveatlas_annotation.py NER/cognitiveatlas_annotation.txt
-#fi
+# If the compiled brain regions file doesn't exist, create it
+if ! [[ -e ../udf/NER/brain_regions.json ]]; then
+    echo "Generating compiled brain regions json..."
+    python ../udf/compile_brain_regions.py NER/brain_regions.json
+fi
 
 # Run nlp extractor to parse into table
 deepdive run nlp_extract

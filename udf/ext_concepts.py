@@ -24,7 +24,7 @@ Will produce objects of format:
 '''
 
 from cognitiveatlas.api import get_concept
-from nlp import do_stem
+from nlp import do_stem, get_match
 import re
 import numpy
 import sys
@@ -46,36 +46,6 @@ for concept_name in concept_names:
 
 # Make a long regular expression
 concept_regexp = "*|".join(concepts_stemmed) + "*"
-
-# Function to get a match: start, length, text,s from a sentence
-def get_match(phrasematch,entirephrase):
-    full_concept = phrasematch.split(" ")
-    foundmatch = True
-    indices = []
-    for word in full_concept:
-        if word in entirephrase:
-            indices.append(entirephrase.index(word))
-        # Missing any one word, not a match
-        else:
-            foundmatch = False
-    if len(numpy.unique(indices)) == len(full_concept):
-        for i in range(0,len(indices)-1):
-            # Not in chronological order +1, not a match
-            if indices[i]+1 != indices[i+1]:
-                foundmatch = False
-    # Missing any one word, not a match
-    else:
-        foundmatch = False
-    if foundmatch == True:
-        start_index = entirephrase.index(full_concept[0])
-        length = len(full_concept)
-        text = entirephrase[start_index:start_index+length]      
-    else:
-        start_index = 0
-        length = 0
-        text = ""
-    return start_index,length,text
-
 
 # For-loop for each row in the input query
 for row in sys.stdin:
