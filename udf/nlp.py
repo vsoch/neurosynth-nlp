@@ -95,7 +95,7 @@ def find_phrases(words,vocabulary,repeat=2):
     vocab_stemmed = stem_phrases(vocabulary)
     stemmed = [s.encode("utf-8") for s in do_stem(words)]
     # Make a long regular expression
-    regexp = "*|".join(regions_stemmed) + "*"
+    regexp = "*|".join(vocab_stemmed) + "*"
     phrases = []
     # We need to keep track of indices that have found items
     found_indices = numpy.zeros(len(stemmed))
