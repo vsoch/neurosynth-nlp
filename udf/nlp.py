@@ -82,7 +82,6 @@ def get_match(phrasematch,entirephrase,found_indices):
 
 # Use get_match to find a list of phrases with get_match (above)
 """
-regexp: the regular expression to search across the entire phrase
 words: a list of words
 vocabulary: a list of words / phrases to find in the words
 repeat: the number of times to run over the phrase
