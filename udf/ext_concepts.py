@@ -24,7 +24,7 @@ Will produce objects of format:
 '''
 
 from cognitiveatlas.api import get_concept
-from nlp import do_stem, get_match
+from nlp import do_stem, stem_phrases, find_phrases
 import re
 import numpy
 import sys
@@ -36,13 +36,7 @@ concepts = get_concept().pandas
 concept_names = concepts["name"].tolist()
 
 # We will stem concept names, and search for them across sentences
-concepts_stemmed = []
-for concept_name in concept_names:
-    concept_name = concept_name.split(" ")
-    if isinstance(concept_name,str):
-        concept_name = [concept_name]
-    concept_stemmed = do_stem(concept_name)
-    concepts_stemmed.append(" ".join(concept_stemmed).encode("utf-8"))
+concepts_stemmed = stem_phrases(concept_names)
 
 # Make a long regular expression
 concept_regexp = "*|".join(concepts_stemmed) + "*"
@@ -53,17 +47,7 @@ for row in sys.stdin:
     sentence_id, words_str, ner_tags_str = row.strip().split('\t')
     words = words_str.split(ARR_DELIM)
     stemmed = [s.encode("utf-8") for s in do_stem(words)]
-    phrases = []
-    # Search the sentence for any concepts:
-    if re.match(concept_regexp," ".join(stemmed)):
-        for c in range(0,len(stemmed)):
-            for concept_stemmed in concepts_stemmed:
-                if re.match("%s" %(stemmed[c]),concept_stemmed):
-                    print "%s matches %s" %(stemmed[c],concept_stemmed)
-                    start_index,length,text = get_match(concept_stemmed,stemmed)
-                    # A non match returns a length of 0
-                    if length != 0:
-                        phrases.append((start_index, length, text))            
+    phrases = find_phrases(concept_regexp,stemmed,concepts_stemmed)
 
 # Pipe back to std-out                    
 for start_position, length, text in phrases:

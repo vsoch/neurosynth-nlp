@@ -18,6 +18,16 @@ __version__ = "$Revision: 1.0 $"
 __date__ = "$Date: 2015/07/25 $"
 __license__ = "Python"
 
+# Return list of stemmed phrases
+def stem_phrases(phrases):
+    stemmed = []
+    for phrase in phrases:
+        phrase = phrase.split(" ")
+        if isinstance(phrase,str):
+            phrase = [phrase]
+        single_stemmed = do_stem(phrase)
+        stemmed.append(" ".join(single_stemmed).encode("utf-8"))
+    return stemmed
 
 # Function to get a match: start, length, text,s from a sentence
 def get_match(phrasematch,entirephrase):
@@ -47,6 +57,21 @@ def get_match(phrasematch,entirephrase):
         length = 0
         text = ""
     return start_index,length,text
+
+# Use get_match to find a list of phrases with get_match (above)
+def find_phrases(regexp,stemmed,lookup_stemmed):
+    phrases = []
+    # Search the sentence for any concepts:
+    if re.match(regexp," ".join(stemmed)):
+        for c in range(0,len(stemmed)):
+            for single_stemmed in lookup_stemmed:
+                if re.match("%s" %(stemmed[c]),single_stemmed):
+                    start_index,length,text = get_match(single_stemmed,stemmed)
+                    # A non match returns a length of 0
+                    if length != 0:
+                        phrases.append((start_index, length, text))            
+    return phrases
+
 
 # Stem words (does not return unique)
 def do_stem(words):
