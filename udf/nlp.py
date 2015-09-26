@@ -90,18 +90,14 @@ repeat: the number of times to run over the phrase
 
 """
 def find_phrases(words,vocabulary,repeat=2):
-
     vocabulary = numpy.unique(vocabulary).tolist()
     vocabulary = [v.encode("utf-8") for v in vocabulary]
-
     # We will stem phrases, and search for them across the stemmed words
     vocab_stemmed = stem_phrases(vocabulary)
     stemmed = [s.encode("utf-8") for s in do_stem(words)]
-
     # Make a long regular expression
     regexp = "*|".join(regions_stemmed) + "*"
     phrases = []
-
     # We need to keep track of indices that have found items
     found_indices = numpy.zeros(len(stemmed))
     # We run it twice in case of repeats in a sentence
@@ -109,7 +105,7 @@ def find_phrases(words,vocabulary,repeat=2):
         # Search the sentence for any concepts:
         if re.search(regexp," ".join(stemmed)):
             for c in range(0,len(stemmed)):
-                for single_stemmed in lookup_stemmed:
+                for single_stemmed in vocabulary_stemmed:
                     if re.match("%s" %(stemmed[c]),single_stemmed):
                         match_result = get_match(single_stemmed,stemmed,found_indices)
                         found_indices = match_result["found_indices"]
