@@ -105,7 +105,7 @@ def find_phrases(words,vocabulary,repeat=2):
         # Search the sentence for any concepts:
         if re.search(regexp," ".join(stemmed)):
             for c in range(0,len(stemmed)):
-                for single_stemmed in vocabulary_stemmed:
+                for single_stemmed in vocab_stemmed:
                     if re.match("%s" %(stemmed[c]),single_stemmed):
                         match_result = get_match(single_stemmed,stemmed,found_indices)
                         found_indices = match_result["found_indices"]
