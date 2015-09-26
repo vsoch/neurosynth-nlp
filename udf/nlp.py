@@ -83,14 +83,25 @@ def get_match(phrasematch,entirephrase,found_indices):
 # Use get_match to find a list of phrases with get_match (above)
 """
 regexp: the regular expression to search across the entire phrase
-stemmed: the stemmed list of words in the phrase
-lookup_stemmed: list of stemmed lookup phrases
+words: a list of words
+vocabulary: a list of words / phrases to find in the words
 repeat: the number of times to run over the phrase
 (in case of repeats of same in one sentence)
 
 """
-def find_phrases(regexp,stemmed,lookup_stemmed,repeat=2):
+def find_phrases(words,vocabulary,repeat=2):
+
+    vocabulary = numpy.unique(vocabulary).tolist()
+    vocabulary = [v.encode("utf-8") for v in vocabulary]
+
+    # We will stem phrases, and search for them across the stemmed words
+    vocab_stemmed = stem_phrases(vocabulary)
+    stemmed = [s.encode("utf-8") for s in do_stem(words)]
+
+    # Make a long regular expression
+    regexp = "*|".join(regions_stemmed) + "*"
     phrases = []
+
     # We need to keep track of indices that have found items
     found_indices = numpy.zeros(len(stemmed))
     # We run it twice in case of repeats in a sentence

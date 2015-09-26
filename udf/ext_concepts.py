@@ -24,7 +24,7 @@ Will produce objects of format:
 '''
 
 from cognitiveatlas.api import get_concept
-from nlp import do_stem, stem_phrases, find_phrases
+from nlp import do_stem, find_phrases
 import re
 import numpy
 import sys
@@ -35,19 +35,12 @@ ARR_DELIM = '~^~'
 concepts = get_concept().pandas
 concept_names = concepts["name"].tolist()
 
-# We will stem concept names, and search for them across sentences
-concepts_stemmed = stem_phrases(concept_names)
-
-# Make a long regular expression
-concept_regexp = "*|".join(concepts_stemmed) + "*"
-
 # For-loop for each row in the input query
 for row in sys.stdin:
     # Find phrases that are continuous words tagged with PERSON.
     sentence_id, words_str, ner_tags_str = row.strip().split('\t')
     words = words_str.split(ARR_DELIM)
-    stemmed = [s.encode("utf-8") for s in do_stem(words)]
-    phrases = find_phrases(concept_regexp,stemmed,concepts_stemmed)
+    phrases = find_phrases(words,concept_names)
 
 # Pipe back to std-out                    
 for start_position, length, text in phrases:

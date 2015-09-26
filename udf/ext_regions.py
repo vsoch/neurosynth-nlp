@@ -21,7 +21,7 @@ Will produce objects of format:
 
 '''
 
-from nlp import do_stem, stem_phrases, find_phrases
+from nlp import find_phrases
 import json
 import re
 import numpy
@@ -39,22 +39,12 @@ regions = []
 for r in region_dict:
     regions = regions + r["variants"]
 
-regions = numpy.unique(regions).tolist()
-regions = [region.encode("utf-8") for region in regions]
-
-# We will stem concept names, and search for them across sentences
-regions_stemmed = stem_phrases(regions)
-
-# Make a long regular expression
-regexp = "*|".join(regions_stemmed) + "*"
-
 # For-loop for each row in the input query
 for row in sys.stdin:
     # Find phrases that are continuous words tagged with PERSON.
     sentence_id, words_str, ner_tags_str = row.strip().split('\t')
     words = words_str.split(ARR_DELIM)
-    stemmed = [s.encode("utf-8") for s in do_stem(words)]
-    phrases = find_phrases(regexp,stemmed,regions_stemmed)
+    phrases = find_phrases(words,regions)
 
 # Pipe back to std-out                    
 for start_position, length, text in phrases:
