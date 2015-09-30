@@ -54,7 +54,7 @@ for l in range(start,end):
         sentence_id, words_str, ner_tags_str = line.strip().split('\t')
         words = words_str.split(ARR_DELIM)
         words = [w.replace(")","").replace("(","") for w in words]
-        phrases = find_phrases(words,concept_names)
+        phrases = find_phrases(words,regions)
         # Insert into mentions table
         for start_position, length, text in phrases:
             mention_id =  '%s_%d' % (sentence_id, start_position)
