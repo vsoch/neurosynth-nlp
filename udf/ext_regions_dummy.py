@@ -28,7 +28,7 @@ import numpy
 import sys
 
 json_lookup = sys.argv[1]
-start = int(sys.arv[2])
+start = int(sys.argv[2])
 end = int(sys.argv[3])
 
 ARR_DELIM = '~^~'
