@@ -57,7 +57,9 @@ if ! [[ -e ../udf/NER/brain_regions.json ]]; then
 fi
 
 # Run nlp extractor to parse into table
-deepdive run nlp_extract
+# NOTE: IMPORTANT: This will / should be sent to run on the TACC grid
+#deepdive run nlp_extract
+DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run nlp_extract
 
 # If you get this error:
 # ERROR:  must be superuser to create procedural language "plpythonu"
@@ -85,3 +87,56 @@ deepdive sql "
     mention_id text 
   );
 "
+
+# Run pipeline to extract mentions of concepts and regions
+# Not tested - this was also done manually because of SSL issues
+deepdive run mentions_extract
+
+# Now we will extract candidates for has_cognitive_process relations, 
+# the simplest thing to do is have them in the same sentence
+
+# this is for concept --> concept associations
+# we can train this using the cognitive atlas
+# however we will need negative assertions as well
+
+# this is for region --> concept associations 
+deepdive sql "
+CREATE TABLE has_cognitive_concept(
+    region_id text,
+    concept_id text,
+    sentence_id text,
+    description text,
+    is_true boolean,
+    relation_id text,
+    id bigint 
+);
+"
+
+deepdive sql "
+CREATE TABLE has_related_concept(
+  concept1_id text,
+  concept2_id text,
+  sentence_id text,
+  description text,
+  is_true boolean,
+  relation_id text, 
+  id bigint
+);
+"
+
+deepdive sql "
+CREATE TABLE has_cognitive_concept_features(
+  relation_id text,
+  feature text
+);
+"
+
+deepdive sql "
+CREATE TABLE has_related_concept_features(
+  relation_id text,
+  feature text
+);
+"
+
+# First try extracting related concepts - we only need concept_mentions for this
+deepdive run extract_related_concepts

@@ -26,6 +26,7 @@ import json
 import re
 import numpy
 import sys
+import os
 
 json_lookup = sys.argv[1]
 start = int(sys.argv[2])

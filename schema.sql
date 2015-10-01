@@ -32,3 +32,34 @@ CREATE TABLE region_mentions(
   text text,
   mention_id text  -- unique identifier for region_mentions
 );
+
+CREATE TABLE has_cognitive_concept(
+  region_id text,
+  concept_id text,
+  sentence_id text,
+  description text,
+  is_true boolean,
+  relation_id text, -- unique identifier for has_cognitive_concept
+  id bigint   -- reserved for DeepDive
+);
+
+CREATE TABLE has_cognitive_concept_features(
+  relation_id text,
+  feature text);
+);
+
+CREATE TABLE has_related_concept(
+  concept1_id text,
+  concept2_id text,
+  sentence_id text,
+  description text,
+  is_true boolean,
+  relation_id text, 
+  id bigint   -- reserved for DeepDive
+);
+
+
+CREATE TABLE has_related_concept_features(
+  relation_id text,
+  feature text);
+);

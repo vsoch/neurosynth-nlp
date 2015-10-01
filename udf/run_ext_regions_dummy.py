@@ -38,12 +38,13 @@ filey = open(input_file,"rb")
 lines = filey.readlines()
 filey.close()
 
-iters = len(lines)/100
+iters = 49
+jobsperiter = len(lines)/49
 
 # For-loop for each row in the input query
-for i in range(0,iters):
-    start = i*100
-    end = start + 100
+for i in range(35,iters):
+    start = i*jobsperiter
+    end = start + jobsperiter
     filey = ".jobs/ext_region_%s.job" %(i)
     filey = open(filey,"w")
     filey.writelines("#!/bin/bash\n")
@@ -54,6 +55,6 @@ for i in range(0,iters):
     filey.writelines("#SBATCH --mem=64000\n")
     filey.writelines("python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/udf/ext_regions_dummy.py %s %s %s" %(json_lookup, start, end))
     filey.close()
-    os.system("sbatch -p normal " + ".jobs/ext_region_%s.job" %(i)) 
+    os.system("sbatch -p normal -n 1 " + ".jobs/ext_region_%s.job" %(i)) 
 
 
