@@ -6,7 +6,7 @@ APP_HOME = os.environ['APP_HOME']
 
 # Get cognitive atlas concepts for distant supervision
 from cognitiveatlas.api import get_concept
-from nlp import do_stem, find_phrases
+from nlp import do_stem, find_phrases, stem_phrases
 import pandas
 import numpy
 import sys
@@ -18,27 +18,29 @@ ARR_DELIM = '~^~'
 concepts = get_concept()
 concept_names = concepts.pandas["name"].tolist()
 concept_ids = concepts.pandas["id"].tolist()
+vocab_stemmed = stem_phrases(concept_names)
 
 # First generate a matrix of relationships, put a 1 for is-a
 pairs = set()            # pairs of concepts
 related_concepts = set() # concepts that are related to something
 
-print "Generating relationship data frame for training positive cases..."
-relationdf = pandas.DataFrame(0,index=concept_ids,columns=concept_ids)
+relationdf = pandas.DataFrame(0,index=vocab_stemmed,columns=vocab_stemmed)
 for c in range(0,len(concepts.json)):
     concept = concepts.json[c]
-    print "Parsing concept %s of %s" %(c,len(concepts.json))
     cid = concept["id"]
     if "relationships" in concept:
         for relation in concept["relationships"]:
             if relation["relationship"] == "kind of":
                 # We have assertions for undefined concepts, so we need to check
                 if cid in concept_ids and relation["id"] in concept_ids:
-                    relationdf.loc[cid,relation["id"]] = 1
-                    relationdf.loc[relation["id"],cid] = 1
-                    pairs.add((relation["id"],cid))
-                    related_concepts.add(relation["id"])
-                    related_concepts.add(cid)
+                    stem1 = stem_phrases([concept["name"]])[0]
+                    relation_concept = get_concept(id=relation["id"])
+                    stem2 = stem_phrases([relation_concept.json[0]["name"]])[0]
+                    relationdf.loc[stem1,stem2] = 1
+                    relationdf.loc[stem2,stem1] = 1
+                    pairs.add((stem1,stem2))
+                    related_concepts.add(stem1)
+                    related_concepts.add(stem2)
 
 # For each input tuple
 for row in sys.stdin:

@@ -90,7 +90,7 @@ deepdive sql "
 
 # Run pipeline to extract mentions of concepts and regions
 # Not tested - this was also done manually because of SSL issues
-deepdive run mentions_extract
+DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run mentions_extract
 
 # Now we will extract candidates for has_cognitive_process relations, 
 # the simplest thing to do is have them in the same sentence
@@ -139,4 +139,4 @@ CREATE TABLE has_related_concept_features(
 "
 
 # First try extracting related concepts - we only need concept_mentions for this
-deepdive run extract_related_concepts
+DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run has_related_concept
