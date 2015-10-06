@@ -42,8 +42,8 @@ paragraphs = [p for p in paragraphs if p]
 # 9,
 # 101226@9
 
-filey = open(output_file,"wb")
-error_file = open(error_file,"wb")
+filey = open(output_file,"w")
+error_file = open(error_file,"w")
 
 # This is a function to return a dependency structure to input into database
 def dependency_structure(words,dependency):
