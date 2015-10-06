@@ -35,7 +35,7 @@ module load launcher
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=nlp_extract.job
+export CONTROL_FILE=../.job/nlp_extract.job
 
 # Variable descriptions:
 #

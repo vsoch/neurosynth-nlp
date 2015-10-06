@@ -83,4 +83,5 @@ for p in range(0,len(paragraphs)):
         efiley.writelines("%s|%s\n" %(sentence_id,paratext))
 
 filey.close()
-efiley.close()
+if os.path.exists(error_file):
+    efiley.close()
