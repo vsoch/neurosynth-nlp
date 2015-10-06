@@ -64,18 +64,23 @@ for p in range(0,len(paragraphs)):
     try:
         nlp = proc.parse_doc(paratext)
         wordslist = nlp["sentences"][0]["tokens"]
-        text = " ".join(wordslist)
+        text = '"%s"' %(",".join(wordslist))
+        # All commas must be replaced with "" from here on
+        wordslist = [x.replace(',','""') for x in wordlist]
         words = "{%s}" %(",".join(wordslist))
-        lemmas = "{%s}" %(",".join(nlp["sentences"][0]["lemmas"]))
-        pos = "{%s}" %(",".join(nlp["sentences"][0]["pos"]))
+        lemmas = [x.replace(',','""') for x in nlp["sentences"][0]["lemmas"]]
+        lemmas = "{%s}" %(",".join(lemmas))
+        pos = [x.replace(',','""') for x in nlp["sentences"][0]["pos"]]
+        pos = "{%s}" %(",".join(pos))
         ner = "{%s}" %(",".join(nlp["sentences"][0]["ner"]))
         # This is a lookup for the terms, using the words
-        dependencies = "{%s}" %(",".join(['""%s""' %(dependency_structure(words,x)) for x in nlp["sentences"][0]["deps_cc"]]))
+        dependencies = "{%s}" %(",".join(['""%s""' %(dependency_structure(wordslist,x)) for x in nlp["sentences"][0]["deps_cc"]]))
         # document_id | sentence | words | lemma | pos_tags | dependencies | ner_tags | sentence_offset | sentence_id 
-        for_database = '%s\t%s\t"{%s}"\t%s\t%s\t%s\t%s\t%s\t%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
+        for_database = '%s,%s,%s,%s,%s,%s,%s,%s,%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
         filey.writelines(for_database)
     except:  
         error_file.writelines("%s|%s\n" %(sentence_id,paratext))
 
 filey.close()
 error_file.close()
+proc.cleanup()
