@@ -8,18 +8,15 @@
 
 from stanford_corenlp_pywrapper import CoreNLP
 import os
+import sys
 
 # Prepare the parser
 proc = CoreNLP(configdict={'annotators':'tokenize, ssplit, pos, parse, lemma, ner'},
                output_types=["pos","parse"], 
                corenlp_jars=["/work/02092/vsochat/wrangler/SOFTWARE/stanford-corenlp-full-2015-04-20/*"])
 
-#input_file = sys.argv[1]
-#output_file = sys.argv[2]
-
-input_file = "/work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt"
-output_file = "/work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp /extractions/25505380_extractions.txt"
-
+input_file = sys.argv[1]
+output_file = sys.argv[2]
 
 # Any errors will have entries written to an error file for inspection
 error_file = output_file.replace(".txt",".err")

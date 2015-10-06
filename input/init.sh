@@ -42,7 +42,7 @@ deepdive sql "
 python ../slurm/1.run_nlp_parser.sh
 
 # Test
-python /home/02092/vsochat/SCRIPT/neurosynth-nlp/slurm/1.nlp_parser.py /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/extractions/25505380_extractions.txt
+python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/1.nlp_parser.py /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/extractions/25505380_extractions.txt
 
 # Russ and Vanessa write command here
 #launch ../slurm/.job/nlp_extract.job
