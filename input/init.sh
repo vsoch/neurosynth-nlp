@@ -20,9 +20,8 @@ fi
 bash ../slurm/0.prep_core_nlp.sh
 
 # We will use launcher
-module use /home/02092/vsochat/SCRIPT/modules/launch
-module load poldracklablaunch
-#LAUNCHER_TEMPLATE=/home/02092/vsochat
+#module use /home/02092/vsochat/SCRIPT/modules/launch
+#module load poldracklablaunch
 
 # Create sentences table
 deepdive sql "
@@ -45,26 +44,23 @@ python ../slurm/1.run_nlp_parser.sh
 # Test
 #python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/1.nlp_parser.py /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/extractions/25505380_extractions.txt
 
-# Russ and Vanessa write command here
-launch -s ../slurm/.job/nlp_extract.job -r 01:00:00 -k --jobname nlpextract -N 32
+# Launcher script is already prepared
+sbatch ../slurm/templates/nlpextract.slurm
 
-
-# If the compiled brain regions file doesn't exist, create it
-if ! [[ -e ../udf/NER/brain_regions.json ]]; then
-    echo "Generating compiled brain regions json..."
-    python ../udf/NER/compile_brain_regions.py ../udf/NER/brain_regions.json "../udf/NER/aba-syn.xml,../udf/NER/bams2004swanson-syn.xml"
-fi
-
-# Run nlp extractor to parse into table
-# NOTE: IMPORTANT: This will / should be sent to run on the TACC grid
-#deepdive run nlp_extract
-DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run nlp_extract
+# Add sentences to the database
+python ../slurm/2.import_sentences.py
 
 # If you get this error:
 # ERROR:  must be superuser to create procedural language "plpythonu"
 # You or an admin must do:
 # sudo apt-get install postgresql-plpython
 # deepdive sql 'CREATE LANGUAGE plpythonu;'
+
+# If the compiled brain regions file doesn't exist, create it
+if ! [[ -e ../udf/NER/brain_regions.json ]]; then
+    echo "Generating compiled brain regions json..."
+    python ../udf/NER/compile_brain_regions.py ../udf/NER/brain_regions.json "../udf/NER/aba-syn.xml,../udf/NER/bams2004swanson-syn.xml"
+fi
 
 # Create tables for mentions
 deepdive sql "

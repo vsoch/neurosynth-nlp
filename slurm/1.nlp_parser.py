@@ -75,7 +75,7 @@ for p in range(0,len(paragraphs)):
         # This is a lookup for the terms, using the words
         dependencies = "{%s}" %(",".join(['""%s""' %(dependency_structure(wordslist,x)) for x in nlp["sentences"][0]["deps_cc"]]))
         # document_id | sentence | words | lemma | pos_tags | dependencies | ner_tags | sentence_offset | sentence_id 
-        for_database = '%s,%s,%s,%s,%s,%s,%s,%s,%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
+        for_database = '%s,%s,"%s","%s","%s","%s","%s",%s,%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
         filey.writelines(for_database)
     except:  
         if not os.path.exists(error_file):
