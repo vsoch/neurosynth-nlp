@@ -71,7 +71,6 @@ for p in range(0,len(paragraphs)):
         ner = "{%s}" %(",".join(nlp["sentences"][0]["ner"]))
         # This is a lookup for the terms, using the words
         dependencies = "{%s}" %(",".join(['""%s""' %(dependency_structure(words,x)) for x in nlp["sentences"][0]["deps_cc"]]))
-        sentence_offset = delim.join(["%s|%s" %(x[0],x[1]) for x in nlp["sentences"][0]["char_offsets"]])
         # document_id | sentence | words | lemma | pos_tags | dependencies | ner_tags | sentence_offset | sentence_id 
         for_database = '%s\t%s\t"{%s}"\t%s\t%s\t%s\t%s\t%s\t%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
         filey.writelines(for_database)
