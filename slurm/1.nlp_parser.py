@@ -66,7 +66,7 @@ for p in range(0,len(paragraphs)):
         wordslist = nlp["sentences"][0]["tokens"]
         text = '"%s"' %(",".join(wordslist))
         # All commas must be replaced with "" from here on
-        wordslist = [x.replace(',','""') for x in wordlist]
+        wordslist = [x.replace(',','""') for x in wordslist]
         words = "{%s}" %(",".join(wordslist))
         lemmas = [x.replace(',','""') for x in nlp["sentences"][0]["lemmas"]]
         lemmas = "{%s}" %(",".join(lemmas))
@@ -83,4 +83,3 @@ for p in range(0,len(paragraphs)):
 
 filey.close()
 error_file.close()
-proc.cleanup()
