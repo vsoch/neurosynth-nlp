@@ -16,24 +16,8 @@ if ! [[ -e articles.txt ]]; then
     python extract_articles.py articles.txt
 fi
 
-# Create articles table
-deepdive sql "
-  CREATE TABLE articles(
-    article_id bigint,    -- identifier of article
-    text       text       -- all text in the article
-  );
-"
-
-deepdive sql "COPY articles FROM STDIN DELIMITER AS '|'" <./articles.txt
-
-# Compile the Stanford parser
-if hash sbt 2>/dev/null; then
-    echo "Please see nlp_extractor_reqs.sh to set up sbt for the nlp_extractor"
-else
-    cd $DEEPDIVE_HOME/examples/nlp_extractor
-    sbt stage
-    cd "$(dirname "$0")"
-fi
+# Prepare the stanford nlp parser
+bash ../slurm/0.prep_core_nlp.sh
 
 # Create sentences table
 deepdive sql "
