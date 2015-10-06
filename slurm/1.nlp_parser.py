@@ -58,7 +58,7 @@ def dependency_structure(words,dependency):
     return structure.encode("utf-8")
 
 for p in range(0,len(paragraphs)):
-    paratext = paragraphs[p].replace("<p>","").replace("</p>","").replace("\t"," ").replace('"',"''")
+    paratext = paragraphs[p].replace("<p>","").replace("</p>","").replace("\t"," ").replace('"',"''").replace(",","")
     sentence_id = "%s@%s" %(article_id,p)
     try:
         nlp = proc.parse_doc(paratext)
