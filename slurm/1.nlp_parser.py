@@ -43,7 +43,6 @@ paragraphs = [p for p in paragraphs if p]
 # 101226@9
 
 filey = open(output_file,"w")
-error_file = open(error_file,"w")
 
 # This is a function to return a dependency structure to input into database
 def dependency_structure(words,dependency):
@@ -79,7 +78,9 @@ for p in range(0,len(paragraphs)):
         for_database = '%s,%s,%s,%s,%s,%s,%s,%s,%s\n' %(article_id,text,words,lemmas,pos,dependencies,ner,p,sentence_id)
         filey.writelines(for_database)
     except:  
-        error_file.writelines("%s|%s\n" %(sentence_id,paratext))
+        if not os.path.exists(error_file):
+            efiley = open(error_file,"w")
+        efiley.writelines("%s|%s\n" %(sentence_id,paratext))
 
 filey.close()
-error_file.close()
+efiley.close()

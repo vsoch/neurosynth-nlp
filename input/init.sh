@@ -22,6 +22,7 @@ bash ../slurm/0.prep_core_nlp.sh
 # We will use launcher
 module use /home/02092/vsochat/SCRIPT/modules/launch
 module load poldracklablaunch
+#LAUNCHER_TEMPLATE=/home/02092/vsochat
 
 # Create sentences table
 deepdive sql "
@@ -42,10 +43,10 @@ deepdive sql "
 python ../slurm/1.run_nlp_parser.sh
 
 # Test
-python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/1.nlp_parser.py /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/extractions/25505380_extractions.txt
+#python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/1.nlp_parser.py /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/sentences/25505380_sentences.txt /work/02092/vsochat/wrangler/DATA/NEUROSYNTH-NLP/corenlp/extractions/25505380_extractions.txt
 
 # Russ and Vanessa write command here
-#launch ../slurm/.job/nlp_extract.job
+launch -s ../slurm/.job/nlp_extract.job -r 01:00:00 -k --jobname nlpextract -N 32
 
 
 # If the compiled brain regions file doesn't exist, create it
