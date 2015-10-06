@@ -34,6 +34,6 @@ for l in range (0,len(lines)):
     filey.writelines(line)
     filey.close()
     # Write command to launcher file
-    lfiley.writelines("python /home/02092/vsochat/SCRIPT/neurosynth-nlp/slurm/1.nlp_parser.py %s %s\n" %(article_text,article_output))
+    lfiley.writelines("python /home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/1.nlp_parser.py %s %s\n" %(article_text,article_output))
 
 lfiley.close()
