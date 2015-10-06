@@ -19,6 +19,10 @@ fi
 # Prepare the stanford nlp parser
 bash ../slurm/0.prep_core_nlp.sh
 
+# We will use launcher
+module use /home/02092/vsochat/SCRIPT/modules/launch
+module load poldracklablaunch
+
 # Create sentences table
 deepdive sql "
   CREATE TABLE sentences(
@@ -33,6 +37,12 @@ deepdive sql "
     sentence_id text
 );
 "
+
+# Extract sentences, and launch!
+python ../slurm/1.run_nlp_parser.sh
+
+# Russ and Vanessa write command here
+#launch ../slurm/.job/nlp_extract.job
 
 # If the compiled brain regions file doesn't exist, create it
 if ! [[ -e ../udf/NER/brain_regions.json ]]; then
