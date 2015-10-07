@@ -92,6 +92,7 @@ deepdive sql "
 "
 
 # Export data to extract mentions of concepts and regions
+# STOPPED HERE - maybe get start and end index of sentences.csv?
 deepdive sql "COPY (SELECT sentence_id, words From sentences) TO STDOUT WITH CSV;" >> sentences.csv
 python ../slurm/3.run_extract_mentions.py
 

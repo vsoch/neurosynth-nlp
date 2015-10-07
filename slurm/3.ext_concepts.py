@@ -28,17 +28,23 @@ import sys
 import pickle
 
 concept_pickle = sys.argv[1]
-sentences = sys.argv[2]
+sentences_file = sys.argv[2]
+start = sys.argv[3]
+end = sys.argv[4]
+error_file = sys.argv[5]
 
-# Retrieve concepts from the cognitive atlas
+# Retrieve concepts from the cognitive atlas pickle
 concept_pickle = pickle.load(open(concept_pickle,"rb"))
-
-# Retrieve concepts from the cognitive atlas
 concept_names = concept_pickle["concept_names"]
 concept_ids = concept_pickle["concept_ids"]
 
+# Get sentences
+sentences_file = open(sentences_file,"rb")
+sentences = sentences_file.readlines()[start:end]
+sentences_file.close()
+
 # PARSE SENTENCES HERE.
-lines = [s.strip("\n") for s in sentences.split("|")]
+lines = [s.strip("\n") for s in sentences]
 
 # For-loop for each row in the input query
 for l in range(0,len(lines)):
@@ -56,4 +62,11 @@ for l in range(0,len(lines)):
             insert_statement = "INSERT INTO concept_mentions values ('%s',%s,%s,'%s','%s');" %(sentence_id,start_position,length," ".join(text),mention_id)
             os.system('deepdive sql "%s"' %insert_statement)
     except:
+        if not os.path.exists(error_file):
+            efiley = open(error_file,"w")
+        efiley.writelines(line)
         print "Error with line %s" %line
+    
+
+if os.path.exists(error_file):
+    efiley.close()

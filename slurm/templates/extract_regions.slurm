@@ -35,7 +35,7 @@ module load launcher
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=/home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/.job/extract_regions.job
+export CONTROL_FILE=/home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/.job/region_mentions.job
 
 # Variable descriptions:
 #
