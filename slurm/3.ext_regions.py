@@ -65,7 +65,7 @@ for l in range(0,len(lines)):
         # Insert into mentions table
         for start_position, length, text in phrases:
             mention_id =  '%s_%d' % (sentence_id, start_position)
-            insert_statement = "'%s',%s,%s,'%s','%s'\n" %(sentence_id,start_position,length," ".join(text),mention_id)
+            insert_statement = "%s,%s,%s,%s,%s\n" %(sentence_id,start_position,length," ".join(text),mention_id)
             filey.writelines(insert_statement)
     except:
         if not os.path.exists(error_file):
