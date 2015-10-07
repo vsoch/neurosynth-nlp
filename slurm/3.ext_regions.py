@@ -40,6 +40,10 @@ sentences_file.close()
 # PARSE SENTENCES HERE.
 lines = [s.strip("\n") for s in sentences]
 
+# We will write to an output file
+output_file = error_file.replace(".err",".txt")
+filey = open(output_file,'w')
+
 # Read in the json with brain regions
 region_dict = json.load(open(json_lookup,"rb"))
 
@@ -61,14 +65,14 @@ for l in range(0,len(lines)):
         # Insert into mentions table
         for start_position, length, text in phrases:
             mention_id =  '%s_%d' % (sentence_id, start_position)
-            insert_statement = "INSERT INTO region_mentions values ('%s',%s,%s,'%s','%s');" %(sentence_id,start_position,length," ".join(text),mention_id)
-            os.system('deepdive sql "%s"' %insert_statement)
+            insert_statement = "INSERT INTO region_mentions values ('%s',%s,%s,'%s','%s');\n" %(sentence_id,start_position,length," ".join(text),mention_id)
+            filey.writelines(insert_statement);
     except:
         if not os.path.exists(error_file):
             efiley = open(error_file,"w")
         efiley.writelines("%s\n" %(line))
         print "Error with line %s" %line
     
-
+filey.close()
 if os.path.exists(error_file):
     efiley.close()

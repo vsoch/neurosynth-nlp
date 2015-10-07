@@ -34,6 +34,10 @@ start = int(sys.argv[3])
 end = int(sys.argv[4])
 error_file = sys.argv[5]
 
+# We will write to an output file
+output_file = error_file.replace(".err",".txt")
+filey = open(output_file,'w')
+
 # Retrieve concepts from the cognitive atlas pickle
 concept_pickle = pickle.load(open(concept_pickle,"rb"))
 concept_names = concept_pickle["concept_names"]
@@ -48,6 +52,7 @@ sentences_file.close()
 lines = [s.strip("\n") for s in sentences]
 
 # For-loop for each row in the input query
+insert_statements = []
 for l in range(0,len(lines)):
     try:
         line = lines[l]
@@ -60,14 +65,19 @@ for l in range(0,len(lines)):
         # Insert into mentions table
         for start_position, length, text in phrases:
             mention_id =  '%s_%d' % (sentence_id, start_position)
-            insert_statement = "INSERT INTO concept_mentions values ('%s',%s,%s,'%s','%s');" %(sentence_id,start_position,length," ".join(text),mention_id)
-            os.system('deepdive sql "%s"' %insert_statement)
+            insert_statement = "'%s',%s,%s,'%s','%s'\n" %(sentence_id,start_position,length," ".join(text),mention_id)
+            filey.writelines(insert_statement)
     except:
         if not os.path.exists(error_file):
             efiley = open(error_file,"w")
         efiley.writelines("%s\n" %(line))
         print "Error with line %s" %line
     
+filey.close()
 
 if os.path.exists(error_file):
     efiley.close()
+
+# Try writing to database
+if os.path.exists(output_file):
+    os.system('deepdive sql "COPY concept_mentions FROM STDIN CSV" <%s' %output_file)

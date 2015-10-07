@@ -12,8 +12,8 @@
 #-------------------------------------------------------
 # 
 #------------------Scheduler Options--------------------
-#SBATCH -J extregions            # Job name
-#SBATCH -N 32        # Total number of nodes (16 cores/node)
+#SBATCH -J extregions          # Job name
+#SBATCH -N 32                  # Total number of nodes (16 cores/node)
 #SBATCH -n 768                 # Total number of tasks
 #SBATCH -p normal              # Queue name
 #SBATCH -o extregions.o%j      # Name of stdout output file (%j expands to jobid)
