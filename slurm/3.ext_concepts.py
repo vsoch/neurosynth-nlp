@@ -23,17 +23,18 @@ Will produce objects of format:
 
 '''
 
-from cognitiveatlas.api import get_concept
 from nlp import do_stem, find_phrases
-import re
-import numpy
 import sys
 
 ARR_DELIM = '~^~'
 
 # Retrieve concepts from the cognitive atlas
-concepts = get_concept().pandas
-concept_names = concepts["name"].tolist()
+concept_pickle = "/home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/concept_relations.pkl"
+concept_pickle = pickle.load(open(concept_pickle,"rb"))
+
+# Retrieve concepts from the cognitive atlas
+concept_names = concept_pickle["concept_names"]
+concept_ids = concept_pickle["concept_ids"]
 
 # For-loop for each row in the input query
 for row in sys.stdin:
@@ -48,7 +49,7 @@ for row in sys.stdin:
           [ str(x) for x in [
             sentence_id,
             start_position,   # start_position
-            length, # length
-            text,  # text
+            length,           # length
+            " ".join(text),   # text
             '%s_%d' % (sentence_id, start_position)        # mention_id
           ]])
