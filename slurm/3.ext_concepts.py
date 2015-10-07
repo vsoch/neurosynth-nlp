@@ -29,8 +29,8 @@ import pickle
 
 concept_pickle = sys.argv[1]
 sentences_file = sys.argv[2]
-start = sys.argv[3]
-end = sys.argv[4]
+start = int(sys.argv[3])
+end = int(sys.argv[4])
 error_file = sys.argv[5]
 
 # Retrieve concepts from the cognitive atlas pickle
