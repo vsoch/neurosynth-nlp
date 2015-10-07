@@ -25,6 +25,7 @@ Will produce objects of format:
 
 from nlp import do_stem, find_phrases
 import sys
+import os
 import pickle
 
 concept_pickle = sys.argv[1]
