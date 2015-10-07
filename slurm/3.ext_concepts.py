@@ -65,7 +65,7 @@ for l in range(0,len(lines)):
     except:
         if not os.path.exists(error_file):
             efiley = open(error_file,"w")
-        efiley.writelines(line)
+        efiley.writelines("%s\n" %(line))
         print "Error with line %s" %line
     
 

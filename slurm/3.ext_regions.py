@@ -23,13 +23,22 @@ Will produce objects of format:
 
 from nlp import find_phrases
 import json
+import os
 import sys
 
 json_lookup = sys.argv[1]
-sentences = sys.argv[2]
-output_tsv = sys.argv[3]
+sentences_file = sys.argv[2]
+start = int(sys.argv[3])
+end = int(sys.argv[4])
+error_file = sys.argv[5]
 
-ARR_DELIM = '~^~'
+# Get sentences
+sentences_file = open(sentences_file,"rb")
+sentences = sentences_file.readlines()[start:end]
+sentences_file.close()
+
+# PARSE SENTENCES HERE.
+lines = [s.strip("\n") for s in sentences]
 
 # Read in the json with brain regions
 region_dict = json.load(open(json_lookup,"rb"))
@@ -40,19 +49,26 @@ for r in region_dict:
     regions = regions + r["variants"]
 
 # For-loop for each row in the input query
-for row in sys.stdin:
-    # Find phrases that are continuous words tagged with PERSON.
-    sentence_id, words_str, ner_tags_str = row.strip().split('\t')
-    words = words_str.split(ARR_DELIM)
-    phrases = find_phrases(words,regions)
+for l in range(0,len(lines)):
+    try:
+        line = lines[l]
+        # Find phrases that are continuous words tagged with PERSON.
+        sentence_id, words_str = line.strip().replace('"','').strip('}').split('{')
+        sentence_id = sentence_id.strip(",")
+        words = words_str.split(",")
+        words = [w.replace(")","").replace("(","") for w in words]
+        phrases = find_phrases(words,regions)
+        # Insert into mentions table
+        for start_position, length, text in phrases:
+            mention_id =  '%s_%d' % (sentence_id, start_position)
+            insert_statement = "INSERT INTO region_mentions values ('%s',%s,%s,'%s','%s');" %(sentence_id,start_position,length," ".join(text),mention_id)
+            os.system('deepdive sql "%s"' %insert_statement)
+    except:
+        if not os.path.exists(error_file):
+            efiley = open(error_file,"w")
+        efiley.writelines("%s\n" %(line))
+        print "Error with line %s" %line
+    
 
-    # Pipe back to std-out                    
-    for start_position, length, text in phrases:
-        print '\t'.join(
-          [ str(x) for x in [
-            sentence_id,
-            start_position,   # start_position
-            length,           # length
-            " ".join(text),   # text
-            '%s_%d' % (sentence_id, start_position)        # mention_id
-      ]])
+if os.path.exists(error_file):
+    efiley.close()
