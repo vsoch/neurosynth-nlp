@@ -12,11 +12,11 @@
 #-------------------------------------------------------
 # 
 #------------------Scheduler Options--------------------
-#SBATCH -J nlpextract            # Job name
+#SBATCH -J extregions            # Job name
 #SBATCH -N 32        # Total number of nodes (16 cores/node)
 #SBATCH -n 768                 # Total number of tasks
 #SBATCH -p normal              # Queue name
-#SBATCH -o nlpextract.o%j      # Name of stdout output file (%j expands to jobid)
+#SBATCH -o extregions.o%j      # Name of stdout output file (%j expands to jobid)
 #SBATCH -t 06:00:00            # Run time (hh:mm:ss)
 #------------------------------------------------------
 #
@@ -35,7 +35,7 @@ module load launcher
 export TACC_LAUNCHER_PPN=24
 export EXECUTABLE=$TACC_LAUNCHER_DIR/init_launcher
 export WORKDIR=.
-export CONTROL_FILE=../.job/extract_regions.job
+export CONTROL_FILE=/home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/.job/extract_regions.job
 
 # Variable descriptions:
 #
