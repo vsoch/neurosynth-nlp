@@ -46,13 +46,13 @@ for row in sys.stdin:
     words = words_str.split(ARR_DELIM)
     phrases = find_phrases(words,regions)
 
-# Pipe back to std-out                    
-for start_position, length, text in phrases:
-    print '\t'.join(
-      [ str(x) for x in [
-        sentence_id,
-        start_position,   # start_position
-        length, # length
-        text,  # text
-        '%s_%d' % (sentence_id, start_position)        # mention_id
+    # Pipe back to std-out                    
+    for start_position, length, text in phrases:
+        print '\t'.join(
+          [ str(x) for x in [
+            sentence_id,
+            start_position,   # start_position
+            length,           # length
+            " ".join(text),   # text
+            '%s_%d' % (sentence_id, start_position)        # mention_id
       ]])
