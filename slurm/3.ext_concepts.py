@@ -25,6 +25,7 @@ Will produce objects of format:
 
 from nlp import do_stem, find_phrases
 import sys
+import pickle
 
 ARR_DELIM = '~^~'
 

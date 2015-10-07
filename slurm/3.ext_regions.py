@@ -23,8 +23,6 @@ Will produce objects of format:
 
 from nlp import find_phrases
 import json
-import re
-import numpy
 import sys
 
 json_lookup = sys.argv[1]
