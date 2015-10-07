@@ -77,7 +77,3 @@ filey.close()
 
 if os.path.exists(error_file):
     efiley.close()
-
-# Try writing to database
-if os.path.exists(output_file):
-    os.system('deepdive sql "COPY concept_mentions FROM STDIN CSV" <%s' %output_file)
