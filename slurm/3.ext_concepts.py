@@ -38,14 +38,16 @@ concept_names = concept_pickle["concept_names"]
 concept_ids = concept_pickle["concept_ids"]
 
 # PARSE SENTENCES HERE.
+lines = [s.strip("\n") for s in sentences.split("|")]
 
 # For-loop for each row in the input query
 for l in range(0,len(lines)):
     try:
         line = lines[l]
         # Find phrases that are continuous words tagged with PERSON.
-        sentence_id, words_str, ner_tags_str = line.strip().split('\t')
-        words = words_str.split(ARR_DELIM)
+        sentence_id, words_str = line.strip().replace('"','').strip('}').split('{')
+        sentence_id = sentence_id.strip(",")
+        words = words_str.split(",")
         words = [w.replace(")","").replace("(","") for w in words]
         phrases = find_phrases(words,concept_names)
         # Insert into mentions table
@@ -55,21 +57,3 @@ for l in range(0,len(lines)):
             os.system('deepdive sql "%s"' %insert_statement)
     except:
         print "Error with line %s" %line
-
-# For-loop for each row in the input query
-for row in sys.stdin:
-    # Find phrases that are continuous words tagged with PERSON.
-    sentence_id, words_str, ner_tags_str = row.strip().split('\t')
-    words = words_str.split(ARR_DELIM)
-    phrases = find_phrases(words,concept_names)
-
-    # Pipe back to std-out                    
-    for start_position, length, text in phrases:
-        print '\t'.join(
-          [ str(x) for x in [
-            sentence_id,
-            start_position,   # start_position
-            length,           # length
-            " ".join(text),   # text
-            '%s_%d' % (sentence_id, start_position)        # mention_id
-          ]])
