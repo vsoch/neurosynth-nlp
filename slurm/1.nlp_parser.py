@@ -85,3 +85,8 @@ for p in range(0,len(paragraphs)):
 filey.close()
 if os.path.exists(error_file):
     efiley.close()
+
+# Import into the database on the same call
+# (this is not yet tested, but would be ideal)
+if os.path.exists(output_file):
+    os.system('deepdive sql "COPY sentences FROM STDIN CSV" <%s' %output_file)

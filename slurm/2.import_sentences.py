@@ -14,5 +14,6 @@ input_files = glob("%s/*.txt" %output_base)
 for i in range(len(input_files)):
     os.system('deepdive sql "COPY sentences FROM STDIN CSV" <%s' %input_files[i])
 
-# How many error files?
+
+# How many error files? ~300
 error_files = glob("%s/*.err" %output_base)

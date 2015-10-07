@@ -48,7 +48,14 @@ python ../slurm/1.run_nlp_parser.sh
 sbatch ../slurm/templates/nlpextract.slurm
 
 # Add sentences to the database
-python ../slurm/2.import_sentences.py
+#python ../slurm/2.import_sentences.py
+
+# deepdive sql "select count(*) from sentences"
+# count 
+#-------
+# 87044
+# (1 row)
+
 
 # If you get this error:
 # ERROR:  must be superuser to create procedural language "plpythonu"
