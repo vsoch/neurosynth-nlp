@@ -27,15 +27,34 @@ from nlp import do_stem, find_phrases
 import sys
 import pickle
 
-ARR_DELIM = '~^~'
+concept_pickle = sys.argv[1]
+sentences = sys.argv[2]
 
 # Retrieve concepts from the cognitive atlas
-concept_pickle = "/home/02092/vsochat/SCRIPT/deepdive/neurosynth-nlp/slurm/concept_relations.pkl"
 concept_pickle = pickle.load(open(concept_pickle,"rb"))
 
 # Retrieve concepts from the cognitive atlas
 concept_names = concept_pickle["concept_names"]
 concept_ids = concept_pickle["concept_ids"]
+
+# PARSE SENTENCES HERE.
+
+# For-loop for each row in the input query
+for l in range(0,len(lines)):
+    try:
+        line = lines[l]
+        # Find phrases that are continuous words tagged with PERSON.
+        sentence_id, words_str, ner_tags_str = line.strip().split('\t')
+        words = words_str.split(ARR_DELIM)
+        words = [w.replace(")","").replace("(","") for w in words]
+        phrases = find_phrases(words,concept_names)
+        # Insert into mentions table
+        for start_position, length, text in phrases:
+            mention_id =  '%s_%d' % (sentence_id, start_position)
+            insert_statement = "INSERT INTO concept_mentions values ('%s',%s,%s,'%s','%s');" %(sentence_id,start_position,length," ".join(text),mention_id)
+            os.system('deepdive sql "%s"' %insert_statement)
+    except:
+        print "Error with line %s" %line
 
 # For-loop for each row in the input query
 for row in sys.stdin:

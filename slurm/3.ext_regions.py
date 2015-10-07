@@ -26,6 +26,8 @@ import json
 import sys
 
 json_lookup = sys.argv[1]
+sentences = sys.argv[2]
+output_tsv = sys.argv[3]
 
 ARR_DELIM = '~^~'
 

@@ -46,6 +46,7 @@ python ../slurm/1.run_nlp_parser.sh
 
 # Launcher script is already prepared
 sbatch ../slurm/templates/nlpextract.slurm
+# (this will also add sentences to the database)
 
 # Add sentences to the database
 #python ../slurm/2.import_sentences.py
@@ -90,9 +91,13 @@ deepdive sql "
   );
 "
 
-# Run pipeline to extract mentions of concepts and regions
-# Not tested - this was also done manually because of SSL issues
-DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run mentions_extract
+# Export data to extract mentions of concepts and regions
+deepdive sql "COPY (SELECT sentence_id, words From sentences) TO STDOUT WITH CSV;" >> sentences.csv
+python ../slurm/3.run_extract_mentions.py
+
+# Launcher scripts are already prepared
+sbatch ../slurm/templates/extract_concepts.slurm
+sbatch ../slurm/templates/extract_regions.slurm
 
 # Now we will extract candidates for has_cognitive_process relations, 
 # the simplest thing to do is have them in the same sentence
