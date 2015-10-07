@@ -5,8 +5,6 @@ import csv, os, sys
 APP_HOME = os.environ['APP_HOME']
 
 # Get cognitive atlas concepts for distant supervision
-from cognitiveatlas.api import get_concept
-from nlp import do_stem, find_phrases, stem_phrases
 import pandas
 import pickle
 import numpy
@@ -48,7 +46,7 @@ for row in sys.stdin:
     #     is_true = '0'
     # DS rule 3: false if they appear to be in same person
     elif (c1_text == c2_text) or (c1_text in c2_text) or (c2_text in c1_text):
-         is_true = '0'
+         is_true = '1'
 
     # Output relation candidates into output table
     print '\t'.join([
