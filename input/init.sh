@@ -150,5 +150,12 @@ CREATE TABLE has_related_concept_features(
 # This will also extract candidates and features of the related concepts
 DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run has_related_concept
 
+# STOPPED HERE - there is an error (null iD)
+DEEPDIVE_JDBC_URL='jdbc:postgresql://db1.wrangler.tacc.utexas.edu:5432/deepdive_spouse?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory' deepdive run has_related_concept_inference
+
+# Get BrainDump
+$DEEPDIVE_HOME/examples/tutorial_example/step1-basic/get-braindump.sh
+
 # Now we need to use neurosynth to generate training data for region / concept relations
+
 # We will set a threshold of >.75 to define a relationship as "TRUE" and <=.25 as FALSE
